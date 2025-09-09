@@ -15,14 +15,13 @@ const About = () => {
               Our Mission
             </h3>
             <p className="text-gray-600 mb-6">
-              To impact positively on all aspects of human lives, advance
-              universal well-being - human, animal and environmental - through
-              female-powered solutions that prioritize girls, women and all
-              marginalized groups as Nigeria's transformative core.
+              Our mission is to create sustainable change by providing women and
+              girls with the tools, resources, and support they need to build
+              better futures for themselves and their communities.
             </p>
             <p className="text-gray-600 mb-6">
-              Our mission is to empower women and girls in Guereda by providing
-              them with the tools, resources, and support they need to build
+              Our mission is to create sustainable change by providing women and
+              girls with the tools, resources, and support they need to build
               better futures for themselves and their communities.
             </p>
             <div className="bg-blue-50 p-6 rounded-lg">
@@ -30,9 +29,9 @@ const About = () => {
                 Our Vision
               </h4>
               <p className="text-gray-700">
-                A Nigeria where women and girls drive planetary healing,
-                restoring dignity to all life and eradicating vulnerability
-                through radical inclusion
+                We envision a world where every woman and girl in Nigeria has
+                the opportunity to live with dignity, free from poverty and
+                discrimination.
               </p>
             </div>
           </div>

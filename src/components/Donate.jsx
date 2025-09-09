@@ -33,7 +33,7 @@ const Donate = () => {
         <div className="lg:grid lg:grid-cols-2 lg:gap-12 items-center">
           <div className="mb-12 lg:mb-0">
             <h2 className="text-3xl font-bold mb-6">Make a Difference Today</h2>
-            <p className="text-blue-100 mb-6 text-lg">
+            <p className="text-gray-900 mb-6 text-lg">
               Your generous donation will help us continue our mission to
               empower women and girls in Nigeria. Every contribution, no matter
               the size, makes a significant impact.

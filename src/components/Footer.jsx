@@ -54,7 +54,10 @@ const Footer = () => {
               sustainable change in their communities.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-white">
+              <a
+                href="https://www.facebook.com/CORRIDORSOFPEACECHAD?rdid=4XVYaOgJrFNutkmY&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1JChwocKoh%2F#"
+                className="text-gray-400 hover:text-white"
+              >
                 <span className="sr-only">Facebook</span>
                 <svg
                   className="h-6 w-6"
@@ -134,7 +137,7 @@ const Footer = () => {
           ))}
         </div>
 
-        <div  className="mt-12 pt-8 border-t border-gray-800">
+        <div className="mt-12 pt-8 border-t border-gray-800">
           <div className="md:flex md:items-center md:justify-between">
             <p className="text-base text-gray-400">
               &copy; {currentYear} Corridors of Peace. All rights reserved.
@@ -153,7 +156,7 @@ const Footer = () => {
             </p>
           </div>
         </div>
-      </div >
+      </div>
     </footer>
   );
 };
