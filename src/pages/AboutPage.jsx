@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import LeadershipTeam from "../components/LeadershipTeam";
 
 const AboutPage = () => {
   return (
@@ -68,6 +69,8 @@ const AboutPage = () => {
               </div>
             </div>
           </div>
+
+          <LeadershipTeam />
         </div>
       </div>
     </motion.div>
