@@ -83,7 +83,7 @@ const Organization = () => {
         </div>
 
         {/* Call to Action */}
-        <div className="mt-16 bg-[#d1fae5] rounded-2xl p-8 text-center text-gray-900 sm:p-12">
+        <div className="mt-16 bg-gradient-to-r from-blue-100 to-blue-200 rounded-2xl p-8 text-center text-gray-900 sm:p-12">
           <h2 className="text-2xl font-bold sm:text-3xl">Join Our Mission</h2>
           <p className="mx-auto mt-4 max-w-lg text-gray-700">
             Be part of our journey to create lasting change for women and girls

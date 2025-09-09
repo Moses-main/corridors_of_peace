@@ -27,7 +27,7 @@ const Donate = () => {
   return (
     <section
       id="donate"
-      className="py-16 bg-gradient-to-r from-blue-600 to-blue-800 text-white"
+      className="py-16 bg-gradient-to-r from-blue-100 to-blue-200"
     >
       <div className="max-w-7xl mxo px-4 sm:px-6 lg:px-8">
         <div className="lg:grid lg:grid-cols-2 lg:gap-12 items-center">
