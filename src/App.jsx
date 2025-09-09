@@ -1,18 +1,18 @@
-import { useState, useEffect } from 'react';
-import { Routes, Route, useLocation } from 'react-router-dom';
-import { AnimatePresence } from 'framer-motion';
+import { useState, useEffect } from "react";
+import { Routes, Route, useLocation } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
 
 // Layout Components
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 // Page Components
-import Home from './pages/Home';
-import AboutPage from './pages/AboutPage';
-import ProjectsPage from './pages/ProjectsPage';
-import DonatePage from './pages/DonatePage';
-import ContactPage from './pages/ContactPage';
-import NotFound from './pages/NotFound';
+import Home from "./pages/Home";
+import AboutPage from "./pages/AboutPage";
+import ProjectsPage from "./pages/ProjectsPage";
+import DonatePage from "./pages/DonatePage";
+import ContactPage from "./pages/ContactPage";
+import NotFound from "./pages/NotFound";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -36,7 +36,7 @@ function App() {
   return (
     <div className="min-h-screen flex flex-col bg-white">
       <Navbar isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
-      
+
       <main className="flex-grow">
         <AnimatePresence mode="wait" initial={false}>
           <ScrollToTop />
@@ -50,7 +50,7 @@ function App() {
           </Routes>
         </AnimatePresence>
       </main>
-      
+
       <Footer />
     </div>
   );

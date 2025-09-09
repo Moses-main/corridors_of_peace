@@ -134,7 +134,7 @@ const Footer = () => {
           ))}
         </div>
 
-        <div className="mt-12 pt-8 border-t border-gray-800">
+        <div  className="mt-12 pt-8 border-t border-gray-800">
           <div className="md:flex md:items-center md:justify-between">
             <p className="text-base text-gray-400">
               &copy; {currentYear} Corridors of Peace. All rights reserved.
@@ -153,7 +153,7 @@ const Footer = () => {
             </p>
           </div>
         </div>
-      </div>
+      </div >
     </footer>
   );
 };

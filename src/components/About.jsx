@@ -15,10 +15,10 @@ const About = () => {
               Our Mission
             </h3>
             <p className="text-gray-600 mb-6">
-              Corridors of Peace is a non-profit organization dedicated to
-              preserving the dignity of women and girls in Nigeria. We work
-              towards creating sustainable change through education, economic
-              empowerment, and social protection programs.
+              To impact positively on all aspects of human lives, advance
+              universal well-being - human, animal and environmental - through
+              female-powered solutions that prioritize girls, women and all
+              marginalized groups as Nigeria's transformative core.
             </p>
             <p className="text-gray-600 mb-6">
               Our mission is to empower women and girls in Guereda by providing
@@ -30,9 +30,9 @@ const About = () => {
                 Our Vision
               </h4>
               <p className="text-gray-700">
-                A world where every woman and girl in Nigeria has the
-                opportunity to live with dignity, free from poverty and
-                discrimination.
+                A Nigeria where women and girls drive planetary healing,
+                restoring dignity to all life and eradicating vulnerability
+                through radical inclusion
               </p>
             </div>
           </div>
