@@ -20,7 +20,7 @@ const Home = () => {
         <Hero />
         <About />
         <Universal_Causes />
-        <Donate />
+        {/* <Donate /> */}
         <Organization />
         <Contact />
       </motion.div>
