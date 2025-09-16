@@ -66,14 +66,14 @@ const ContactPage = () => {
 
         <div className="bg-white shadow-lg rounded-lg overflow-hidden">
           <div className="md:flex">
-            <div className="md:w-1/2 p-8 md:p-12 bg-blue-600 text-white">
+            <div className="md:w-1/2 p-8 md:p-12 bg-gradient-to-r from-blue-300 to-blue-300 text-black">
               <h2 className="text-2xl font-bold mb-6">Get in Touch</h2>
 
               <div className="space-y-6">
                 <div className="flex items-start">
                   <div className="flex-shrink-0 bg-blue-700 p-3 rounded-lg">
                     <svg
-                      className="h-6 w-6"
+                      className="h-6 w-6 text-white"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -95,7 +95,7 @@ const ContactPage = () => {
                   </div>
                   <div className="ml-4">
                     <h3 className="text-lg font-semibold">Our Location</h3>
-                    <p className="text-blue-100">
+                    <p className="text-black">
                       1234 Peace Avenue
                       <br />
                       N'Djamena, Nigeria
@@ -106,7 +106,7 @@ const ContactPage = () => {
                 <div className="flex items-start">
                   <div className="flex-shrink-0 bg-blue-700 p-3 rounded-lg">
                     <svg
-                      className="h-6 w-6"
+                      className="h-6 w-6 text-white"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -124,7 +124,7 @@ const ContactPage = () => {
                     <h3 className="text-lg font-semibold">Email Us</h3>
                     <a
                       href="mailto:info@corridorsofpeace.org"
-                      className="text-blue-100 hover:underline"
+                      className="text-black hover:underline"
                     >
                       info@corridorsofpeace.org
                     </a>
@@ -134,7 +134,7 @@ const ContactPage = () => {
                 <div className="flex items-start">
                   <div className="flex-shrink-0 bg-blue-700 p-3 rounded-lg">
                     <svg
-                      className="h-6 w-6"
+                      className="h-6 w-6 text-white"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -152,7 +152,7 @@ const ContactPage = () => {
                     <h3 className="text-lg font-semibold">Call Us</h3>
                     <a
                       href="tel:+235123456789"
-                      className="text-blue-100 hover:underline"
+                      className="text-black hover:underline"
                     >
                       +235 12 34 56 78
                     </a>
@@ -167,7 +167,7 @@ const ContactPage = () => {
                     href="https://facebook.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-blue-100 hover:text-white"
+                    className="text-blue-800 hover:text-white"
                   >
                     <span className="sr-only">Facebook</span>
                     <svg
@@ -187,7 +187,7 @@ const ContactPage = () => {
                     href="https://twitter.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-blue-100 hover:text-white"
+                    className="text-black hover:text-white"
                   >
                     <span className="sr-only">Twitter</span>
                     <svg
@@ -203,7 +203,7 @@ const ContactPage = () => {
                     href="https://instagram.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-blue-100 hover:text-white"
+                    className="text-purple-500 hover:text-purple-800"
                   >
                     <span className="sr-only">Instagram</span>
                     <svg
@@ -223,7 +223,7 @@ const ContactPage = () => {
                     href="https://linkedin.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-blue-100 hover:text-white"
+                    className="text-blue-800 hover:text-white"
                   >
                     <span className="sr-only">LinkedIn</span>
                     <svg

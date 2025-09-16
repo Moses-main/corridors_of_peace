@@ -64,7 +64,7 @@ const Organization = () => {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="col-span-1 flex justify-center"
               >
-                <div className="h-16 w-full flex items-center justify-center bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                <div className="h-16 w-full flex items-center justify-center bg-gray p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow">
                   <img
                     className="max-h-12 max-w-[120px] object-contain"
                     src={partner.logo}
