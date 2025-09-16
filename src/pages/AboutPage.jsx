@@ -12,10 +12,10 @@ const AboutPage = () => {
       className="min-h-screen flex flex-col"
     >
       {/* Hero Section */}
-      <div className="flex-grow flex items-center py-16">
+      <div className="flex-grow flex  items-center py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-4xl font-bold text-gray-900 sm:text-5xl lg:text-6xl mb-6">
+            <h1 className="text-4xl mt-10 font-bold text-gray-900 sm:text-5xl lg:text-6xl mb-6">
               About Us
             </h1>
             <div className="h-1 w-20 bg-blue-600 mx-auto mb-8"></div>
@@ -28,11 +28,9 @@ const AboutPage = () => {
         </div>
       </div>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-          <div className="prose prose-lg text-gray-600 max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-gray-900">
-              Our Mission
-            </h2>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div className="prose prose-lg text-gray-600 max-w-4xl mx-auto">
+          <h2 className="text-2xl font-bold text-gray-900">Our Mission</h2>
           <p>
             Our mission is to create sustainable change by providing women and
             girls with the tools, resources, and support they need to build
@@ -55,7 +53,6 @@ const AboutPage = () => {
             empowerment, and community engagement.
           </p>
         </div>
-
       </div>
 
       {/* Founders Section */}
@@ -72,7 +69,9 @@ const AboutPage = () => {
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="text-center p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                <div className="text-5xl font-bold text-blue-600 mb-2">100+</div>
+                <div className="text-5xl font-bold text-blue-600 mb-2">
+                  100+
+                </div>
                 <p className="text-gray-700 font-medium">Women Empowered</p>
               </div>
               <div className="text-center p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
@@ -81,7 +80,9 @@ const AboutPage = () => {
               </div>
               <div className="text-center p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
                 <div className="text-5xl font-bold text-blue-600 mb-2">3+</div>
-                <p className="text-gray-700 font-medium">Partner Organizations</p>
+                <p className="text-gray-700 font-medium">
+                  Partner Organizations
+                </p>
               </div>
             </div>
           </div>

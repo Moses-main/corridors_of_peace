@@ -5,21 +5,24 @@ const ProfileCard = ({ name, role, image, shortBio, fullBio, contactInfo }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="group bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden border border-gray-100 hover:border-blue-100">
-      <div className="relative h-72 overflow-hidden">
+    <div className="group bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden border border-gray-100 hover:border-blue-100 flex flex-col h-full">
+      <div className="relative pt-[100%] overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-        <img 
-          src={image} 
-          alt={name}
-          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-        />
+        <div className="absolute inset-0 flex items-center justify-center overflow-hidden">
+          <img 
+            src={image} 
+            alt={name}
+            className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
+            style={{ objectPosition: 'center 25%' }}
+          />
+        </div>
         <div className="absolute bottom-0 left-0 p-6 z-20 w-full">
-          <h3 className="text-2xl font-bold text-white mb-1">{name}</h3>
-          <p className="text-blue-200 font-medium">{role}</p>
+          <h3 className="text-2xl font-bold text-white mb-1 drop-shadow-md">{name}</h3>
+          <p className="text-blue-200 font-medium drop-shadow-md">{role}</p>
         </div>
       </div>
-      <div className="p-6">
-        <p className="text-gray-600 mb-6 line-clamp-3">{shortBio}</p>
+      <div className="p-6 flex-1 flex flex-col">
+        <p className="text-gray-600 mb-6 line-clamp-3 flex-grow">{shortBio}</p>
         <button 
           onClick={() => setIsOpen(true)}
           className="w-full bg-gradient-to-r from-blue-600 to-blue-700 text-white py-3 px-6 rounded-lg hover:from-blue-700 hover:to-blue-800 transition-all duration-300 font-medium shadow-sm hover:shadow-md"
