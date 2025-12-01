@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 // Components
 import Hero from "../components/Hero";
 import About from "../components/About";
+import VideoGallery from "../components/VideoGallery";
 // import Universal_Causes from "../components/Universal_Causes";
 import Donate from "../components/Donate";
 import Organization from "../components/Organization";
@@ -19,6 +20,7 @@ const Home = () => {
       >
         <Hero />
         <About />
+        <VideoGallery />
         {/* <Universal_Causes /> */}
         {/* <Donate /> */}
         <Organization />
