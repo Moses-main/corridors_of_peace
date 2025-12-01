@@ -2,7 +2,7 @@ const Universal_Causes = () => {
   const impact_pillars = [
     {
       id: 1,
-      pillar: "Human Dignity",
+      pillar: "African Human Dignity",
       initiatives:
         "Girl-child eduation  *  Maternity health equity * Disability justice * Prisoner rehabilitation * Internships",
       stats: "100+ women reached",
@@ -25,7 +25,7 @@ const Universal_Causes = () => {
     },
     {
       id: 2,
-      pillar: "Planetary Health",
+      pillar: "African Planetary Health",
       initiatives:
         "Climate resilience * Water security * Pollution abatement * Soil restoration * Environment * Environmental research",
       stats: "50+ families supported",
@@ -48,7 +48,7 @@ const Universal_Causes = () => {
     },
     {
       id: 3,
-      pillar: "Animal Sanctuary",
+      pillar: "Animal Sanctuary & Solidarity",
       initiatives:
         "Wildlife conservation * Stray animal welfare * Ethical food systems.",
       stats: "Ongoing project",
@@ -71,7 +71,7 @@ const Universal_Causes = () => {
     },
     {
       id: 4,
-      pillar: "Health Equity",
+      pillar: "Health Equity for All",
       initiatives:
         "Mental health support * Pandemic response * Sexual and reproductive health * Therapeutic arts.",
       stats: "Ongoing project",
@@ -94,7 +94,7 @@ const Universal_Causes = () => {
     },
     {
       id: 5,
-      pillar: "Arts, Music & Culture",
+      pillar: "African Arts, Music & Culture",
       initiatives:
         "Cultural preservation * Art / music therapy * Creative education * Healing advocacy",
       stats: "Ongoing project",
@@ -123,7 +123,7 @@ const Universal_Causes = () => {
     },
     {
       id: 6,
-      pillar: "Economic Justice",
+      pillar: "African Economic Justice",
       initiatives:
         "Digital inclusion * Poverty alleviation * Entreprenuership * Fair Housing / land rights.",
       stats: "Ongoing project",
@@ -146,9 +146,38 @@ const Universal_Causes = () => {
     },
     {
       id: 7,
-      pillar: "Crisis Response",
+      pillar: "Crisis Response & Advocacy",
       initiatives:
         "Disaster relief * Conflict mitigation * Refuge/IDP Support * Legal education.",
+      stats: "Ongoing project",
+      icon: (
+        <svg
+          className="w-8 h-8 text-red-600"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M20.618 5.984A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+          />
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M12 9v2m0 4h.01"
+          />
+        </svg>
+      ),
+    },
+    {
+      id: 7,
+      pillar: "Rsearch, Policy & Partnership",
+      initiatives:
+        "Participatory research, Pan-African policy advocacy, and liaisons with institutions across the continent.",
       stats: "Ongoing project",
       icon: (
         <svg
@@ -180,12 +209,15 @@ const Universal_Causes = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
-            Universal Causes & Impact Pillars
+            Universal Causes We Champion
           </h2>
           <div className="mt-4 h-1 w-20 bg-blue-600 mx-auto"></div>
           <p className="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">
-            We're making a difference through various initiatives focused on
-            women's empowerment and community development.
+            As a Pan-African organization anchored in Nigeria, COPIN operates on
+            pillars that are women/girls/vulnerable-led in both design and
+            benefit. We champion African-led solutions across the following
+            thematic areas, ensuring inclusivity and dedicated support for the
+            healing and engagement of men and boys.
           </p>
         </div>
 
