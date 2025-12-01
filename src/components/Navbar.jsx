@@ -1,6 +1,52 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 
-const Navbar = ({ isMenuOpen, setIsMenuOpen }) => {
+const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const location = useLocation();
+
+  // Close mobile menu when route changes
+  useEffect(() => {
+    setIsMenuOpen(false);
+  }, [location]);
+
+  // Add scroll effect for navbar
+  useEffect(() => {
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 10;
+      if (isScrolled !== scrolled) {
+        setScrolled(isScrolled);
+      }
+    };
+
+    document.addEventListener('scroll', handleScroll, { passive: true });
+    return () => {
+      document.removeEventListener('scroll', handleScroll);
+    };
+  }, [scrolled]);
+
+  // Prevent body scroll when mobile menu is open
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [isMenuOpen]);
+
+  const navLinks = [
+    { to: "/", label: "Home" },
+    { to: "/about", label: "About Us" },
+    { to: "/projects", label: "Projects" },
+    { to: "/approach", label: "Our Approach" },
+    { to: "/donate", label: "Donate", isButton: true },
+    { to: "/contact", label: "Contact" },
+  ];
   return (
     <nav className="bg-white shadow-md fixed w-full z-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -11,8 +57,8 @@ const Navbar = ({ isMenuOpen, setIsMenuOpen }) => {
             </Link>
           </div>
           
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          {/* Desktop Navigation - hidden below 970px */}
+          <div className="hidden lg:flex items-center space-x-1 xl:space-x-2">
             <Link to="/" className="text-gray-700 hover:text-blue-600 px-3 py-2 font-medium">
               Home
             </Link>
@@ -22,6 +68,9 @@ const Navbar = ({ isMenuOpen, setIsMenuOpen }) => {
             <Link to="/projects" className="text-gray-700 hover:text-blue-600 px-3 py-2 font-medium">
               Projects
             </Link>
+            <Link to="/approach" className="text-gray-700 hover:text-blue-600 px-3 py-2 font-medium">
+              Our Approach
+            </Link>
             <Link to="/donate" className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 font-medium">
               Donate
             </Link>
@@ -30,8 +79,8 @@ const Navbar = ({ isMenuOpen, setIsMenuOpen }) => {
             </Link>
           </div>
 
-          {/* Mobile menu button */}
-          <div className="md:hidden flex items-center">
+          {/* Mobile menu button - shown below 970px */}
+          <div className="lg:hidden flex items-center -mr-2">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-blue-600 focus:outline-none"
@@ -72,6 +121,9 @@ const Navbar = ({ isMenuOpen, setIsMenuOpen }) => {
           </Link>
           <Link to="/projects" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">
             Projects
+          </Link>
+          <Link to="/approach" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">
+            Our Approach
           </Link>
           <Link to="/donate" className="block px-3 py-2 rounded-md text-base font-medium text-white bg-blue-600 hover:bg-blue-700">
             Donate

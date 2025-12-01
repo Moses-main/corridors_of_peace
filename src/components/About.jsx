@@ -21,7 +21,7 @@ const About = () => {
               <p className="text-gray-600 mb-6">
                 Our mission is to create sustainable change by providing women and
                 girls with the tools, resources, and support they need to build
-                better futures for themselves and their communities.
+                better futures r themselves and their communities.
               </p>
               <p className="text-gray-600 mb-6">
                 Through education, skills development, and community engagement,

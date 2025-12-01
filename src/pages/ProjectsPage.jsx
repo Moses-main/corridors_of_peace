@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Universal_Causes from "../components/Universal_Causes";
 
 const projects = [
   {
@@ -159,6 +160,8 @@ const ProjectsPage = () => {
             Donate Now
           </a>
         </div>
+
+        <Universal_Causes />
       </div>
     </motion.div>
   );

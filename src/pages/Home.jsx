@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 // Components
 import Hero from "../components/Hero";
 import About from "../components/About";
-import Universal_Causes from "../components/Universal_Causes";
+// import Universal_Causes from "../components/Universal_Causes";
 import Donate from "../components/Donate";
 import Organization from "../components/Organization";
 import Contact from "../components/Contact";
@@ -19,7 +19,7 @@ const Home = () => {
       >
         <Hero />
         <About />
-        <Universal_Causes />
+        {/* <Universal_Causes /> */}
         {/* <Donate /> */}
         <Organization />
         <Contact />

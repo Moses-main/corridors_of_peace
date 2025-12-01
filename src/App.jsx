@@ -10,6 +10,7 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import AboutPage from "./pages/AboutPage";
 import ProjectsPage from "./pages/ProjectsPage";
+import ApproachPage from "./pages/ApproachPage";
 import DonatePage from "./pages/DonatePage";
 import ContactPage from "./pages/ContactPage";
 import NotFound from "./pages/NotFound";
@@ -25,17 +26,11 @@ function ScrollToTop() {
 }
 
 function App() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
-
-  // Close mobile menu when route changes
-  useEffect(() => {
-    setIsMenuOpen(false);
-  }, [location]);
 
   return (
     <div className="min-h-screen flex flex-col bg-white">
-      <Navbar isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
+      <Navbar />
 
       <main className="flex-grow">
         <AnimatePresence mode="wait" initial={false}>
@@ -44,6 +39,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/projects" element={<ProjectsPage />} />
+            <Route path="/approach" element={<ApproachPage />} />
             <Route path="/donate" element={<DonatePage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="*" element={<NotFound />} />
