@@ -32,16 +32,21 @@ const AboutPage = () => {
         <div className="prose prose-lg text-gray-600 max-w-4xl mx-auto">
           <h2 className="text-2xl font-bold text-gray-900">Our Mission</h2>
           <p>
-            Our mission is to create sustainable change by providing women and
-            girls with the tools, resources, and support they need to build
-            better futures for themselves and their communities.
+            Our mission is to catalyze sustainable change across Africa,
+            beginning in Nigeria, by centering women and girls. We provide the
+            tools, resources, and platforms for them to lead, build, and
+            transform their own lives and communities. Through female-powered
+            initiatives and inclusive partnerships that engage men and boys, we
+            foster a cycle of empowerment, healing, and lasting peace.
           </p>
 
           <h2 className="text-2xl font-bold text-gray-900 mt-8">Our Vision</h2>
           <p>
-            We envision a world where every woman and girl in Africa (Nig) has
-            the opportunity to live with dignity, free from poverty and
-            discrimination.
+            We envision a thriving Africa, rooted in peace and dignity, where
+            every woman and girl has the power to shape her own destiny. We see
+            a continent where communities are resilient, environments are
+            healthy, and the well-being of all is secured through the leadership
+            of women and the solidarity of all genders.
           </p>
 
           <h2 className="text-2xl font-bold text-gray-900 mt-8">
@@ -70,18 +75,18 @@ const AboutPage = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="text-center p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
                 <div className="text-5xl font-bold text-blue-600 mb-2">
-                  100+
+                  250+
                 </div>
                 <p className="text-gray-700 font-medium">Women Empowered</p>
               </div>
               <div className="text-center p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                <div className="text-5xl font-bold text-blue-600 mb-2">5+</div>
+                <div className="text-5xl font-bold text-blue-600 mb-2">10+</div>
                 <p className="text-gray-700 font-medium">Active Projects</p>
               </div>
               <div className="text-center p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                <div className="text-5xl font-bold text-blue-600 mb-2">3+</div>
+                <div className="text-5xl font-bold text-blue-600 mb-2">1</div>
                 <p className="text-gray-700 font-medium">
-                  Partner Organizations
+                  Partner Organization
                 </p>
               </div>
             </div>

@@ -221,10 +221,10 @@ const ContactPage = () => {
                       </svg>
                     </div>
                     <a
-                      href="mailto:info@corridorsofpeace.org"
+                      href="mailto:corridorspeacenigeria@gmail.com"
                       className="text-blue-600 hover:underline"
                     >
-                      info@corridorsofpeace.org
+                      corridorspeacenigeria@gmail.com
                     </a>
                   </div>
 
@@ -275,8 +275,10 @@ const ContactPage = () => {
                       </svg>
                     </div>
                     <div>
-                      <p className="text-gray-700">1234 Peace Avenue</p>
-                      <p className="text-gray-700">N'Djamena, Chad</p>
+                      <p className="text-gray-700">Royal Plaza, Obinze</p>
+                      <p className="text-gray-700">
+                        Port-Harcourt Road, Owerri
+                      </p>
                     </div>
                   </div>
                 </div>
