@@ -11,7 +11,7 @@ const projects = [
     location: "Guereda, Africa (Nig)",
     beneficiaries: "100+ women and girls",
     status: "Ongoing",
-    image: "/ladies.jpg",
+    image: "/images/project/copin_skill2.jpg",
   },
   {
     id: 2,
@@ -85,7 +85,7 @@ const projects = [
   },
   {
     id: 9,
-    title: "Agricultural Training Program",
+    title: "Vocational Training Program",
     description:
       "Teaching sustainable farming techniques and providing resources to improve food security and increase agricultural productivity.",
     location: "Rural farming communities",

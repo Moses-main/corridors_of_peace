@@ -37,8 +37,8 @@ const AboutPage = () => {
               beginning in Nigeria, by centering women and girls. We provide the
               tools, resources, and platforms for them to lead, build, and
               transform their own lives and communities. Through female-powered
-              initiatives and inclusive partnerships that engage men and boys, we
-              foster a cycle of empowerment, healing, and lasting peace.
+              initiatives and inclusive partnerships that engage men and boys,
+              we foster a cycle of empowerment, healing, and lasting peace.
             </p>
           </div>
 
@@ -46,10 +46,10 @@ const AboutPage = () => {
             <h2 className="text-2xl font-bold text-blue-800">Our Vision</h2>
             <p className="text-gray-700 text-justify leading-relaxed">
               We envision a thriving Africa, rooted in peace and dignity, where
-              every woman and girl has the power to shape her own destiny. We see
-              a continent where communities are resilient, environments are
-              healthy, and the well-being of all is secured through the leadership
-              of women and the solidarity of all genders.
+              every woman and girl has the power to shape her own destiny. We
+              see a continent where communities are resilient, environments are
+              healthy, and the well-being of all is secured through the
+              leadership of women and the solidarity of all genders.
             </p>
           </div>
 
@@ -79,7 +79,7 @@ const AboutPage = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="text-center p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
                 <div className="text-5xl font-bold text-blue-600 mb-2">
-                  250+
+                  1000+
                 </div>
                 <p className="text-gray-700 font-medium">Women Empowered</p>
               </div>

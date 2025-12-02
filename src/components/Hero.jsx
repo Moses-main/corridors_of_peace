@@ -35,11 +35,16 @@ const Hero = () => {
           <h1 className="text-4xl md:text-5xl font-bold lg:text-6xl text-white leading-tight mb-6 drop-shadow-lg">
             Corridors of Peace Humanitarian Foundation
           </h1>
+
           <div className="h-1 w-20 bg-white/80 mb-8 mx-auto"></div>
+
+          <h1 className="text-4xl md:text-3xl font-bold lg:text-6xl text-[#aab] leading-tight mb-6 drop-shadow-lg">
+            Thinking Global, Acting Locally
+          </h1>
+
           <p className="text-lg text-white/90 mb-10 max-w-2xl mx-auto leading-relaxed drop-shadow-md">
-            Creating sustainable change through education, economic
-            empowerment, and social protection for women and girls in Africa
-            (Nig).
+            Creating sustainable change through education, economic empowerment,
+            and social protection for women and girls in Africa (Nig).
           </p>
           <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center">
             <Link
