@@ -145,7 +145,7 @@ const ProjectsPage = () => {
           ))}
         </div>
 
-        <div className="mt-16 bg-blue-50 rounded-xl p-8 text-center">
+        <div className="mt-16 mb-10 bg-blue-50 rounded-xl p-8 text-center">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">
             Support Our Work
           </h2>
