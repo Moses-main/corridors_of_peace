@@ -14,29 +14,32 @@ const About = () => {
           </div>
 
           <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
-            <div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                Our Mission
-              </h3>
-              <p className="text-gray-600 mb-6">
-                Our mission is to create sustainable change by providing women
-                and girls with the tools, resources, and support they need to
-                build better futures r themselves and their communities.
-              </p>
-              <p className="text-gray-600 mb-6">
-                Through education, skills development, and community engagement,
-                we empower individuals to break the cycle of poverty and create
-                lasting positive change in their lives and communities.
-              </p>
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                  Our Mission
+                </h3>
+                <p className="text-gray-600 text-justify leading-relaxed">
+                  Our mission is to catalyze sustainable change across Africa,
+                  beginning in Nigeria, by centering women and girls. We provide
+                  the tools, resources, and platforms for them to lead, build, and
+                  transform their own lives and communities. Through
+                  female-powered initiatives and inclusive partnerships that
+                  engage men and boys, we foster a cycle of empowerment, healing,
+                  and lasting peace.
+                </p>
+              </div>
               <div className="bg-blue-50 p-6 rounded-lg">
-                <h4 className="font-semibold text-lg text-blue-800 mb-2">
+                <h4 className="font-semibold text-lg text-blue-800 mb-3">
                   Our Vision
                 </h4>
-                <p className="text-gray-700">
-                  We envision a world where every woman and girl in Africa has
-                  the opportunity to live with dignity, free from poverty and
-                  discrimination, and where communities thrive through
-                  sustainable development and peace-building initiatives.
+                <p className="text-gray-700 text-justify leading-relaxed">
+                  We envision a thriving Africa, rooted in peace and dignity,
+                  where every woman and girl has the power to shape her own
+                  destiny. We see a continent where communities are resilient,
+                  environments are healthy, and the well-being of all is secured
+                  through the leadership of women and the solidarity of all
+                  genders.
                 </p>
               </div>
             </div>

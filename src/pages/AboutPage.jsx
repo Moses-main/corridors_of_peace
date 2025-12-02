@@ -29,25 +29,29 @@ const AboutPage = () => {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="prose prose-lg text-gray-600 max-w-4xl mx-auto">
-          <h2 className="text-2xl font-bold text-gray-900">Our Mission</h2>
-          <p>
-            Our mission is to catalyze sustainable change across Africa,
-            beginning in Nigeria, by centering women and girls. We provide the
-            tools, resources, and platforms for them to lead, build, and
-            transform their own lives and communities. Through female-powered
-            initiatives and inclusive partnerships that engage men and boys, we
-            foster a cycle of empowerment, healing, and lasting peace.
-          </p>
+        <div className="max-w-4xl mx-auto space-y-10">
+          <div className="space-y-4">
+            <h2 className="text-2xl font-bold text-gray-900">Our Mission</h2>
+            <p className="text-gray-600 text-justify leading-relaxed">
+              Our mission is to catalyze sustainable change across Africa,
+              beginning in Nigeria, by centering women and girls. We provide the
+              tools, resources, and platforms for them to lead, build, and
+              transform their own lives and communities. Through female-powered
+              initiatives and inclusive partnerships that engage men and boys, we
+              foster a cycle of empowerment, healing, and lasting peace.
+            </p>
+          </div>
 
-          <h2 className="text-2xl font-bold text-gray-900 mt-8">Our Vision</h2>
-          <p>
-            We envision a thriving Africa, rooted in peace and dignity, where
-            every woman and girl has the power to shape her own destiny. We see
-            a continent where communities are resilient, environments are
-            healthy, and the well-being of all is secured through the leadership
-            of women and the solidarity of all genders.
-          </p>
+          <div className="bg-blue-50 p-8 rounded-lg space-y-4">
+            <h2 className="text-2xl font-bold text-blue-800">Our Vision</h2>
+            <p className="text-gray-700 text-justify leading-relaxed">
+              We envision a thriving Africa, rooted in peace and dignity, where
+              every woman and girl has the power to shape her own destiny. We see
+              a continent where communities are resilient, environments are
+              healthy, and the well-being of all is secured through the leadership
+              of women and the solidarity of all genders.
+            </p>
+          </div>
 
           <h2 className="text-2xl font-bold text-gray-900 mt-8">
             Our Approach
