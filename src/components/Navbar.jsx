@@ -48,15 +48,21 @@ const Navbar = () => {
     { to: "/contact", label: "Contact" },
   ];
   return (
-    <nav className="bg-white shadow-md fixed w-full z-10">
+    <header
+      className={`fixed w-full z-50 transition-all duration-300 ${
+        scrolled ? 'bg-white shadow-md' : 'bg-transparent'
+      }`}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-20">
-          <div className="flex items-center">
-            <Link to="/" className="flex-shrink-0 flex items-center">
-              <span className="text-2xl font-bold text-blue-800">Corridors of Peace</span>
-            </Link>
-          </div>
-          
+        <div className="flex justify-between items-center h-20">
+          <Link to="/" className="flex-shrink-0 flex items-center">
+            <img 
+              src="/images/logo/cop_logo2.jpg" 
+              alt="Corridors of Peace Logo" 
+              className="h-12 w-auto"
+            />
+            <h1 className="ml-3 text-xl font-bold text-gray-800 hidden sm:block">Corridors of Peace</h1>
+          </Link>
           {/* Desktop Navigation - hidden below 970px */}
           <div className="hidden lg:flex items-center space-x-1 xl:space-x-2">
             <Link to="/" className="text-gray-700 hover:text-blue-600 px-3 py-2 font-medium">
@@ -133,7 +139,7 @@ const Navbar = () => {
           </Link>
         </div>
       </div>
-    </nav>
+    </header>
   );
 };
 
