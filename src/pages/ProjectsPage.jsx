@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import Universal_Causes from "../components/Universal_Causes";
 
 const projects = [
@@ -219,12 +220,12 @@ const ProjectsPage = () => {
             Your donation can help us expand our programs and reach more women
             and girls in need.
           </p>
-          <a
-            href="/donate"
+          <Link
+            to="/donate"
             className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
           >
             Donate Now
-          </a>
+          </Link>
         </div>
 
         <Universal_Causes />
@@ -237,12 +238,12 @@ const ProjectsPage = () => {
             Your donation can help us expand our programs and reach more women
             and girls in need.
           </p>
-          <a
-            href="/donate"
+          <Link
+            to="/donate"
             className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
           >
             Donate Now
-          </a>
+          </Link>
         </div>
       </div>
     </motion.div>

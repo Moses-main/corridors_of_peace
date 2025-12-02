@@ -175,7 +175,7 @@ const Universal_Causes = () => {
     },
     {
       id: 7,
-      pillar: "Rsearch, Policy & Partnership",
+      pillar: "Research, Policy & Partnership",
       initiatives:
         "Participatory research, Pan-African policy advocacy, and liaisons with institutions across the continent.",
       stats: "Ongoing project",
