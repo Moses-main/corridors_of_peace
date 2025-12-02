@@ -53,13 +53,13 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16 md:h-20">
           <Link to="/" className="flex-shrink-0 flex items-center">
             <div className="h-12 w-12 md:h-16 md:w-16 overflow-hidden rounded-full border-2 border-white shadow-md">
-              <img 
-                src="/images/logo/cop_logo2.jpg" 
-                alt="Corridors of Peace Logo" 
+              <img
+                src="/images/logo/cop_logo2.jpg"
+                alt="Corridors of Peace Logo"
                 className="h-full w-full object-cover"
                 onError={(e) => {
                   e.target.onerror = null;
-                  e.target.src = '/images/logo/cop_logo1.jpg';
+                  e.target.src = "/images/logo/cop_logo1.jpg";
                 }}
               />
             </div>
@@ -73,8 +73,8 @@ const Navbar = () => {
                 to={link.to}
                 className={`px-3 py-2 text-sm font-medium transition-colors duration-200 ${
                   link.isButton
-                    ? 'bg-blue-600 text-white hover:bg-blue-700 ml-2 rounded-md px-4 py-2'
-                    : 'text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-md'
+                    ? "bg-blue-600 text-white hover:bg-blue-700 ml-2 rounded-md px-4 py-2"
+                    : "text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-md"
                 }`}
               >
                 {link.label}
@@ -87,12 +87,12 @@ const Navbar = () => {
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500 transition-colors duration-200"
-              aria-expanded={isMenuOpen ? 'true' : 'false'}
-              aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
+              aria-expanded={isMenuOpen ? "true" : "false"}
+              aria-label={isMenuOpen ? "Close menu" : "Open menu"}
             >
               <span className="sr-only">Open main menu</span>
               <svg
-                className={`${isMenuOpen ? 'hidden' : 'block'} h-6 w-6`}
+                className={`${isMenuOpen ? "hidden" : "block"} h-6 w-6`}
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -107,7 +107,7 @@ const Navbar = () => {
                 />
               </svg>
               <svg
-                className={`${isMenuOpen ? 'block' : 'hidden'} h-6 w-6`}
+                className={`${isMenuOpen ? "block" : "hidden"} h-6 w-6`}
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -131,9 +131,9 @@ const Navbar = () => {
         {isMenuOpen && (
           <motion.div
             initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
+            animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            transition={{ duration: 0.3, ease: 'easeInOut' }}
+            transition={{ duration: 0.3, ease: "easeInOut" }}
             className="md:hidden bg-white/95 backdrop-blur-sm shadow-lg overflow-hidden"
           >
             <div className="px-2 pt-2 pb-4 space-y-1 sm:px-3">
@@ -143,8 +143,8 @@ const Navbar = () => {
                   to={link.to}
                   className={`block px-4 py-3 rounded-md text-base font-medium transition-colors duration-200 ${
                     link.isButton
-                      ? 'bg-blue-600 text-white hover:bg-blue-700 mx-2 text-center'
-                      : 'text-gray-700 hover:bg-gray-50 hover:text-blue-600 mx-2'
+                      ? "bg-blue-600 text-white hover:bg-blue-700 mx-2 text-center"
+                      : "text-gray-700 hover:bg-gray-50 hover:text-blue-600 mx-2"
                   }`}
                   onClick={() => setIsMenuOpen(false)}
                 >

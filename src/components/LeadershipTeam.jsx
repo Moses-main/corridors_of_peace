@@ -53,31 +53,31 @@ const LeadershipTeam = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 px-4 sm:px-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-4 md:gap-6 px-2 sm:px-4 md:px-6">
           {teamMembers.map((member) => (
             <div
               key={member.id}
-              className="group flex flex-col h-full bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-blue-100"
+              className="group flex flex-col h-full bg-white rounded-lg sm:rounded-xl shadow-sm hover:shadow-md sm:hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-blue-100"
             >
-              <div className="relative flex-grow overflow-hidden">
-                <div className="relative pt-[100%] w-full">
+              <div className="relative overflow-hidden">
+                <div className="relative pt-[80%] sm:pt-[90%] md:pt-[100%] w-full">
                   <img
                     src={member.image}
                     alt={member.name}
-                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                     loading="lazy"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-black/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
               </div>
-              <div className="p-5 text-center mt-auto">
-                <h3 className="text-lg font-bold text-gray-900 mb-1">
+              <div className="p-2.5 sm:p-4 md:p-5 text-center mt-auto">
+                <h3 className="text-sm sm:text-base md:text-lg font-bold text-gray-900 mb-0.5 sm:mb-1">
                   {member.name}
                 </h3>
-                <p className="text-blue-600 font-medium text-sm mb-2">
+                <p className="text-blue-600 font-medium text-[11px] xs:text-xs sm:text-sm mb-1.5 sm:mb-2">
                   {member.role}
                 </p>
-                <p className="text-gray-600 text-sm leading-relaxed line-clamp-2 mb-3">
+                <p className="text-gray-600 text-[11px] xs:text-xs sm:text-sm leading-tight sm:leading-relaxed line-clamp-2 mb-1.5 sm:mb-2 md:mb-3">
                   {member.bio}
                 </p>
               </div>
