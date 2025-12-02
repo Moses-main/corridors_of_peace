@@ -22,11 +22,11 @@ const About = () => {
                 <p className="text-gray-600 text-justify leading-relaxed">
                   Our mission is to catalyze sustainable change across Africa,
                   beginning in Nigeria, by centering women and girls. We provide
-                  the tools, resources, and platforms for them to lead, build, and
-                  transform their own lives and communities. Through
+                  the tools, resources, and platforms for them to lead, build,
+                  and transform their own lives and communities. Through
                   female-powered initiatives and inclusive partnerships that
-                  engage men and boys, we foster a cycle of empowerment, healing,
-                  and lasting peace.
+                  engage men and boys, we foster a cycle of empowerment,
+                  healing, and lasting peace.
                 </p>
               </div>
               <div className="bg-blue-50 p-6 rounded-lg">
@@ -47,7 +47,7 @@ const About = () => {
             <div className="grid grid-cols-2 gap-4">
               <div className="bg-blue-100 p-6 rounded-lg">
                 <div className="text-blue-600 text-4xl font-bold mb-2">
-                  100+
+                  250+
                 </div>
                 <p className="text-gray-700">Women Empowered</p>
               </div>
@@ -58,12 +58,12 @@ const About = () => {
                 <p className="text-gray-700">Active Projects</p>
               </div>
               <div className="bg-green-100 p-6 rounded-lg">
-                <div className="text-green-600 text-4xl font-bold mb-2">3+</div>
-                <p className="text-gray-700">Partner Organizations</p>
+                <div className="text-green-600 text-4xl font-bold mb-2">1</div>
+                <p className="text-gray-700">Partner Organization</p>
               </div>
               <div className="bg-purple-100 p-6 rounded-lg">
                 <div className="text-purple-600 text-4xl font-bold mb-2">
-                  1000+
+                  100+
                 </div>
                 <p className="text-gray-700">Lives Impacted</p>
               </div>

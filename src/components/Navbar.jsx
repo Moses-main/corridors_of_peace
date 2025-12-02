@@ -48,69 +48,51 @@ const Navbar = () => {
     { to: "/contact", label: "Contact" },
   ];
   return (
-    <header
-      className={`fixed w-full z-50 transition-all duration-300 bg-gray-50 shadow-md`}
-    >
+    <header className="fixed w-full z-50 bg-white/90 backdrop-blur-sm shadow-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
-          <Link to="/" className="flex-shrink-0 flex items-center h-20 -mb-1">
-            <div className="h-16 w-16 overflow-hidden rounded-full border-2 border-white shadow-md">
+        <div className="flex justify-between items-center h-16 md:h-20">
+          <Link to="/" className="flex-shrink-0 flex items-center">
+            <div className="h-12 w-12 md:h-16 md:w-16 overflow-hidden rounded-full border-2 border-white shadow-md">
               <img 
                 src="/images/logo/cop_logo2.jpg" 
                 alt="Corridors of Peace Logo" 
                 className="h-full w-full object-cover"
+                onError={(e) => {
+                  e.target.onerror = null;
+                  e.target.src = '/images/logo/cop_logo1.jpg';
+                }}
               />
             </div>
-            <h1 className="ml-3 text-xl font-bold text-gray-800 hidden sm:block">Corridors of Peace</h1>
           </Link>
-          {/* Desktop Navigation - hidden below 970px */}
-          <div className="hidden lg:flex items-center space-x-1 xl:space-x-2">
-            <Link
-              to="/"
-              className="block px-4 py-2 text-gray-700 hover:bg-gray-50 rounded-md border-2 border-transparent hover:border-blue-600 transition-all duration-200"
-            >
-              Home
-            </Link>
-            <Link
-              to="/about"
-              className="block px-4 py-2 text-gray-700 hover:bg-gray-50 rounded-md border-2 border-transparent hover:border-blue-600 transition-all duration-200"
-            >
-              About Us
-            </Link>
-            <Link
-              to="/projects"
-              className="block px-4 py-2 text-gray-700 hover:bg-gray-50 rounded-md border-2 border-transparent hover:border-blue-600 transition-all duration-200"
-            >
-              Projects
-            </Link>
-            <Link
-              to="/approach"
-              className="block px-4 py-2 text-gray-700 hover:bg-gray-50 rounded-md border-2 border-transparent hover:border-blue-600 transition-all duration-200"
-            >
-              Our Approach
-            </Link>
-            <Link
-              to="/donate"
-              className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 font-medium border-2 border-transparent hover:border-blue-800 transition-all duration-200"
-            >
-              Donate
-            </Link>
-            <Link
-              to="/contact"
-              className="block px-4 py-2 text-gray-700 hover:bg-gray-50 rounded-md border-2 border-transparent hover:border-blue-600 transition-all duration-200"
-            >
-              Contact
-            </Link>
-          </div>
 
-          {/* Mobile menu button - shown below 970px */}
-          <div className="lg:hidden flex items-center -mr-2">
+          {/* Desktop Navigation */}
+          <nav className="hidden md:flex space-x-1 items-center">
+            {navLinks.map((link) => (
+              <Link
+                key={link.to}
+                to={link.to}
+                className={`px-3 py-2 text-sm font-medium transition-colors duration-200 ${
+                  link.isButton
+                    ? 'bg-blue-600 text-white hover:bg-blue-700 ml-2 rounded-md px-4 py-2'
+                    : 'text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-md'
+                }`}
+              >
+                {link.label}
+              </Link>
+            ))}
+          </nav>
+
+          {/* Mobile menu button */}
+          <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-blue-600 focus:outline-none"
+              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500 transition-colors duration-200"
+              aria-expanded={isMenuOpen ? 'true' : 'false'}
+              aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
             >
+              <span className="sr-only">Open main menu</span>
               <svg
-                className={`${isMenuOpen ? "hidden" : "block"} h-6 w-6`}
+                className={`${isMenuOpen ? 'hidden' : 'block'} h-6 w-6`}
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -125,7 +107,7 @@ const Navbar = () => {
                 />
               </svg>
               <svg
-                className={`${isMenuOpen ? "block" : "hidden"} h-6 w-6`}
+                className={`${isMenuOpen ? 'block' : 'hidden'} h-6 w-6`}
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -145,46 +127,34 @@ const Navbar = () => {
       </div>
 
       {/* Mobile menu */}
-      <div className={`${isMenuOpen ? "block" : "hidden"} lg:hidden`}>
-        <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white shadow-lg">
-          <Link
-            to="/"
-            className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50"
+      <AnimatePresence>
+        {isMenuOpen && (
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: 'auto' }}
+            exit={{ opacity: 0, height: 0 }}
+            transition={{ duration: 0.3, ease: 'easeInOut' }}
+            className="md:hidden bg-white/95 backdrop-blur-sm shadow-lg overflow-hidden"
           >
-            Home
-          </Link>
-          <Link
-            to="/about"
-            className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50"
-          >
-            About Us
-          </Link>
-          <Link
-            to="/projects"
-            className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50"
-          >
-            Projects
-          </Link>
-          <Link
-            to="/approach"
-            className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50"
-          >
-            Our Approach
-          </Link>
-          <Link
-            to="/donate"
-            className="block px-3 py-2 rounded-md text-base font-medium text-white bg-blue-600 hover:bg-blue-700"
-          >
-            Donate
-          </Link>
-          <Link
-            to="/contact"
-            className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50"
-          >
-            Contact
-          </Link>
-        </div>
-      </div>
+            <div className="px-2 pt-2 pb-4 space-y-1 sm:px-3">
+              {navLinks.map((link) => (
+                <Link
+                  key={link.to}
+                  to={link.to}
+                  className={`block px-4 py-3 rounded-md text-base font-medium transition-colors duration-200 ${
+                    link.isButton
+                      ? 'bg-blue-600 text-white hover:bg-blue-700 mx-2 text-center'
+                      : 'text-gray-700 hover:bg-gray-50 hover:text-blue-600 mx-2'
+                  }`}
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </header>
   );
 };
