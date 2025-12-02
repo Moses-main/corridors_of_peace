@@ -159,15 +159,20 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Logo and Description */}
           <div className="space-y-6">
-            <Link to="/" className="inline-block">
-              <motion.img
-                src="/images/logo-white.png"
-                alt="Corridors of Peace"
-                className="h-12 w-auto"
-                whileHover={{ scale: 1.05 }}
-                transition={{ type: "spring", stiffness: 400, damping: 10 }}
-              />
-            </Link>
+            <div className="flex items-center justify-center sm:justify-start">
+              <div className="relative group">
+                {/* Circular logo with border and shadow */}
+                <div className="w-24 h-24 md:w-28 md:h-28 rounded-full overflow-hidden border-4 border-white shadow-lg transform transition-all duration-300 group-hover:scale-105 group-hover:shadow-xl">
+                  <img
+                    src="/images/logo/cop_logo.jpg"
+                    alt="Corridors of Peace"
+                    className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
+                  />
+                </div>
+                {/* Animated ring effect on hover */}
+                <div className="absolute -inset-2 rounded-full border-2 border-blue-300 opacity-0 group-hover:opacity-100 group-hover:animate-ping-slow pointer-events-none transition-opacity duration-300"></div>
+              </div>
+            </div>
             <p className="text-gray-300 text-sm leading-relaxed">
               Empowering women and girls in Nigeria through education, economic
               opportunities, and social protection programs to create
