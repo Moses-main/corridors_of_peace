@@ -10,8 +10,7 @@ const projects = [
     location: "Guereda, Africa (Nig)",
     beneficiaries: "100+ women and girls",
     status: "Ongoing",
-    image:
-      "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    image: "/ladies.jpg",
   },
   {
     id: 2,
@@ -21,8 +20,7 @@ const projects = [
     location: "Eastern Africa (Nig)",
     beneficiaries: "200+ girls",
     status: "Ongoing",
-    image:
-      "https://images.unsplash.com/photo-1523050853548-5d1a0b5a9e3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    image: "/images/copin_children.jpg",
   },
   {
     id: 3,
@@ -32,8 +30,7 @@ const projects = [
     location: "Multiple regions",
     beneficiaries: "50+ women entrepreneurs",
     status: "Ongoing",
-    image:
-      "https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    image: "/images/copin_market.jpg",
   },
   {
     id: 4,
@@ -43,8 +40,77 @@ const projects = [
     location: "Rural Africa (Nig)",
     beneficiaries: "500+ women and children",
     status: "Completed",
-    image:
-      "https://images.unsplash.com/photo-1576086213369-97a306d36557?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    image: "/copin_elderly_woman.jpg",
+  },
+  {
+    id: 5,
+    title: "Sustainable Farming Initiative",
+    description:
+      "Empowering local farmers with sustainable agricultural techniques and resources to improve food security and livelihoods.",
+    location: "Rural Communities",
+    beneficiaries: "100+ farming families",
+    status: "Ongoing",
+    image: "/images/copin_farmers.jpg",
+  },
+  {
+    id: 6,
+    title: "Market Access Program",
+    description:
+      "Creating market linkages for women entrepreneurs and small business owners to expand their customer base and increase income.",
+    location: "Urban and Rural Areas",
+    beneficiaries: "75+ small businesses",
+    status: "Ongoing",
+    image: "/images/copin_market.jpg",
+  },
+  {
+    id: 7,
+    title: "Women's Skills Development",
+    description:
+      "Providing vocational training and skill-building workshops to enhance women's employability and entrepreneurship.",
+    location: "Various Communities",
+    beneficiaries: "150+ women",
+    status: "Active",
+    image: "/images/copin_women.jpg",
+  },
+  {
+    id: 8,
+    title: "Community Peacebuilding",
+    description:
+      "Fostering peace and social cohesion through community dialogues, conflict resolution training, and youth engagement programs.",
+    location: "Conflict-affected areas",
+    beneficiaries: "500+ community members",
+    status: "Ongoing",
+    image: "/copin_townhall.jpg",
+  },
+  {
+    id: 9,
+    title: "Agricultural Training Program",
+    description:
+      "Teaching sustainable farming techniques and providing resources to improve food security and increase agricultural productivity.",
+    location: "Rural farming communities",
+    beneficiaries: "200+ farmers",
+    status: "Active",
+    image: "/copin_fulani_clear.jpg",
+  },
+  {
+    id: 10,
+    title: "Youth Leadership Initiative",
+    description:
+      "Empowering young leaders through mentorship, education, and skills development to drive positive change in their communities.",
+    location: "Urban and rural areas",
+    beneficiaries: "300+ youth",
+    status: "Ongoing",
+    image: "/copin_facilitators.jpg",  // Youth Leadership Initiative
+  },
+  {
+    id: 11,
+    title: "Healthcare Access Program",
+    description:
+      "Improving access to basic healthcare services and health education in underserved communities.",
+    location: "Remote villages",
+    beneficiaries: "1,000+ individuals",
+    status: "Active",
+    image: "/copin_village_meeting.jpg",
   },
 ];
 
