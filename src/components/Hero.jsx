@@ -32,19 +32,17 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="py-20 lg:py-32">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-light text-white leading-tight mb-6 drop-shadow-lg">
-              Empowering <span className="font-bold text-white">Women</span> and{" "}
-              <span className="font-bold text-white">Girls</span> in Africa
-              (Nig)
+          <div className="py-20 lg:py-32 max-w-4xl mx-auto px-4 text-center">
+            <h1 className="text-4xl md:text-5xl font-bold lg:text-6xl text-white leading-tight mb-6 drop-shadow-lg">
+              Corridors of Peace Humanitarian Foundation
             </h1>
-            <div className="h-1 w-20 bg-white/80 mb-8"></div>
-            <p className="text-lg text-white/90 mb-10 max-w-lg leading-relaxed drop-shadow-md">
+            <div className="h-1 w-20 bg-white/80 mb-8 mx-auto"></div>
+            <p className="text-lg text-white/90 mb-10 max-w-2xl mx-auto leading-relaxed drop-shadow-md">
               Creating sustainable change through education, economic
               empowerment, and social protection for women and girls in Africa
               (Nig).
             </p>
-            <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+            <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center">
               <Link
                 to="/donate"
                 className="bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white font-medium py-3 px-8 rounded-md text-center transition duration-300 hover:shadow-lg transform hover:-translate-y-0.5 border border-white/20 hover:border-white/40"
