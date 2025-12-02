@@ -49,7 +49,7 @@ const Navbar = () => {
   ];
   return (
     <header
-      className="fixed w-full z-50 bg-white shadow-md transition-all duration-300"
+      className={`fixed w-full z-50 transition-all duration-300 bg-gray-50 shadow-md`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
@@ -67,37 +67,37 @@ const Navbar = () => {
           <div className="hidden lg:flex items-center space-x-1 xl:space-x-2">
             <Link
               to="/"
-              className="block px-4 py-3 text-gray-700 hover:bg-gray-100 border-l-4 border-transparent hover:border-blue-600 transition-colors duration-200"
+              className="block px-4 py-2 text-gray-700 hover:bg-gray-50 rounded-md border-2 border-transparent hover:border-blue-600 transition-all duration-200"
             >
               Home
             </Link>
             <Link
               to="/about"
-              className="block px-4 py-3 text-gray-700 hover:bg-gray-100 border-l-4 border-transparent hover:border-blue-600 transition-colors duration-200"
+              className="block px-4 py-2 text-gray-700 hover:bg-gray-50 rounded-md border-2 border-transparent hover:border-blue-600 transition-all duration-200"
             >
               About Us
             </Link>
             <Link
               to="/projects"
-              className="block px-4 py-3 text-gray-700 hover:bg-gray-100 border-l-4 border-transparent hover:border-blue-600 transition-colors duration-200"
+              className="block px-4 py-2 text-gray-700 hover:bg-gray-50 rounded-md border-2 border-transparent hover:border-blue-600 transition-all duration-200"
             >
               Projects
             </Link>
             <Link
               to="/approach"
-              className="block px-4 py-3 text-gray-700 hover:bg-gray-100 border-l-4 border-transparent hover:border-blue-600 transition-colors duration-200"
+              className="block px-4 py-2 text-gray-700 hover:bg-gray-50 rounded-md border-2 border-transparent hover:border-blue-600 transition-all duration-200"
             >
               Our Approach
             </Link>
             <Link
               to="/donate"
-              className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 font-medium border-2 border-transparent hover:border-blue-800 transition-colors duration-200"
+              className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 font-medium border-2 border-transparent hover:border-blue-800 transition-all duration-200"
             >
               Donate
             </Link>
             <Link
               to="/contact"
-              className="block px-4 py-3 text-gray-700 hover:bg-gray-100 border-l-4 border-transparent hover:border-blue-600 transition-colors duration-200"
+              className="block px-4 py-2 text-gray-700 hover:bg-gray-50 rounded-md border-2 border-transparent hover:border-blue-600 transition-all duration-200"
             >
               Contact
             </Link>

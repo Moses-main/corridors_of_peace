@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden">
+    <section className="relative min-h-[calc(100vh-80px)] flex items-start pt-20 overflow-hidden">
       {/* Background Image with Effects */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-black/40"></div>
@@ -30,7 +30,7 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 w-full flex items-center justify-center min-h-[calc(100vh-80px)] px-4 sm:px-6 lg:px-8">
+      <div className="relative z-10 w-full flex items-center justify-center min-h-[calc(100vh-100px)] px-4 sm:px-6 lg:px-8">
         <div className="w-full max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-bold lg:text-6xl text-white leading-tight mb-6 drop-shadow-lg">
             Corridors of Peace Humanitarian Foundation
