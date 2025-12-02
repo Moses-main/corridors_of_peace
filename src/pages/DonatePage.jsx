@@ -221,27 +221,16 @@ const DonatePage = () => {
                 <div className="relative mb-8">
                   <div className="absolute -top-4 -left-4 w-24 h-24 rounded-full bg-blue-200 opacity-30"></div>
                   <div className="absolute -bottom-4 -right-4 w-24 h-24 rounded-full bg-blue-300 opacity-30"></div>
-                  <div className="relative z-10 mx-auto w-40 h-40 bg-white rounded-full shadow-lg flex items-center justify-center">
-                    <svg
-                      className="w-24 h-24 text-blue-600"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="1.5"
-                        d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-                      />
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="1.5"
-                        d="M12 15l-3-3m0 0l-3-3m3 3V7"
-                        className="text-blue-400"
-                      />
-                    </svg>
+                  <div className="relative z-10 mx-auto w-40 h-40 bg-white rounded-full shadow-lg flex items-center justify-center p-2">
+                    <img 
+                      src="/images/logo/cop_logo2.jpg" 
+                      alt="Corridors of Peace Logo"
+                      className="h-full w-full rounded-full object-cover border-2 border-white"
+                      onError={(e) => {
+                        e.target.onerror = null; 
+                        e.target.src = '/images/logo/cop_logo1.jpg';
+                      }}
+                    />
                   </div>
                 </div>
 
