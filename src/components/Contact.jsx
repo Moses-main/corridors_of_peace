@@ -60,7 +60,7 @@ const Contact = () => {
         </svg>
       ),
       title: "Our Location",
-      description: "Guereda, Nigeria",
+      description: "Guereda, Africa (Nig)",
       link: "https://maps.google.com",
       linkText: "View on map",
     },

@@ -6,8 +6,8 @@ const projects = [
     id: 1,
     title: "Women's Empowerment in Guereda",
     description:
-      "Empowering women through vocational training, education, and leadership development programs in the Guereda region of Nigeria.",
-    location: "Guereda, Nigeria",
+      "Empowering women through vocational training, education, and leadership development programs in the Guereda region of Africa (Nig).",
+    location: "Guereda, Africa (Nig)",
     beneficiaries: "100+ women and girls",
     status: "Ongoing",
     image:
@@ -18,7 +18,7 @@ const projects = [
     title: "Education for Girls",
     description:
       "Providing access to quality education for girls through school fees, supplies, and community awareness programs.",
-    location: "Eastern Nigeria",
+    location: "Eastern Africa (Nig)",
     beneficiaries: "200+ girls",
     status: "Ongoing",
     image:
@@ -40,7 +40,7 @@ const projects = [
     title: "Health and Hygiene",
     description:
       "Improving health outcomes through hygiene education, menstrual health management, and access to clean water.",
-    location: "Rural Nigeria",
+    location: "Rural Africa (Nig)",
     beneficiaries: "500+ women and children",
     status: "Completed",
     image:
@@ -65,7 +65,7 @@ const ProjectsPage = () => {
           <div className="mt-4 h-1 w-20 bg-blue-600 mx-auto"></div>
           <p className="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">
             Discover how we're making a difference in the lives of women and
-            girls in Nigeria.
+            girls in Africa (Nig).
           </p>
         </div>
 

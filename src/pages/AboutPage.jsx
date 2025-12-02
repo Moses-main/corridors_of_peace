@@ -21,8 +21,8 @@ const AboutPage = () => {
             <div className="h-1 w-20 bg-blue-600 mx-auto mb-8"></div>
             <p className="text-xl text-gray-600">
               Corridors of Peace is a non-profit organization dedicated to
-              empowering women and girls in Nigeria through education, economic
-              opportunities, and social protection programs.
+              empowering women and girls in Africa (Nig) through education,
+              economic opportunities, and social protection programs.
             </p>
           </div>
         </div>
@@ -39,8 +39,8 @@ const AboutPage = () => {
 
           <h2 className="text-2xl font-bold text-gray-900 mt-8">Our Vision</h2>
           <p>
-            We envision a world where every woman and girl in Nigeria has the
-            opportunity to live with dignity, free from poverty and
+            We envision a world where every woman and girl in Africa (Nig) has
+            the opportunity to live with dignity, free from poverty and
             discrimination.
           </p>
 
@@ -86,13 +86,6 @@ const AboutPage = () => {
               </div>
             </div>
           </div>
-        </div>
-      </div>
-
-      {/* Team Section */}
-      <div className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <LeadershipTeam />
         </div>
       </div>
     </motion.div>

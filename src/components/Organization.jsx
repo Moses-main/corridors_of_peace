@@ -22,7 +22,7 @@ const Organization = () => {
         <div className="mx-auto max-w-2xl lg:max-w-none">
           <div className="text-center">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Making a Difference in Nigeria
+              Making a Difference in Africa (Nig)
             </h2>
             <p className="mt-4 text-lg leading-8 text-gray-600">
               Our organization is dedicated to empowering women and girls
@@ -87,7 +87,7 @@ const Organization = () => {
           <h2 className="text-2xl font-bold sm:text-3xl">Join Our Mission</h2>
           <p className="mx-auto mt-4 max-w-lg text-gray-700">
             Be part of our journey to create lasting change for women and girls
-            in Nigeria.
+            in Africa (Nig).
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <a

@@ -174,8 +174,8 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-gray-300 text-sm leading-relaxed">
-              Empowering women and girls in Nigeria through education, economic
-              opportunities, and social protection programs to create
+              Empowering women and girls in Africa (Nig) through education,
+              economic opportunities, and social protection programs to create
               sustainable change in their communities.
             </p>
             <div className="flex space-x-4">
@@ -259,7 +259,7 @@ const Footer = () => {
                     d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                   />
                 </svg>
-                <span>123 Peace Avenue, Lagos, Nigeria</span>
+                <span>123 Peace Avenue, Lagos, Africa (Nig)</span>
               </p>
               <p className="flex items-center">
                 <svg

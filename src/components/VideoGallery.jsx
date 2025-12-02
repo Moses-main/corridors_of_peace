@@ -28,7 +28,8 @@ const VideoGallery = () => {
       title: "Corridors of Peace Switzerland",
       description: "Our journey and impact in Switzerland",
       category: "about",
-      localVideo: "/videos/corrisdors_of_peace_switzerland.mp4",
+      localVideo:
+        "https://corridorsofpeace.online/wp-content/uploads/2025/11/VID-20251111-WA0002-1.mp4",
       thumbnail: "/images/switzerland-thumbnail.jpg",
     },
   ];

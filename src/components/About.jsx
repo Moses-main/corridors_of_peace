@@ -1,5 +1,5 @@
-import LeadershipTeam from './LeadershipTeam';
-import Gallery from './Gallery';
+import LeadershipTeam from "./LeadershipTeam";
+import Gallery from "./Gallery";
 
 const About = () => {
   return (
@@ -19,9 +19,9 @@ const About = () => {
                 Our Mission
               </h3>
               <p className="text-gray-600 mb-6">
-                Our mission is to create sustainable change by providing women and
-                girls with the tools, resources, and support they need to build
-                better futures r themselves and their communities.
+                Our mission is to create sustainable change by providing women
+                and girls with the tools, resources, and support they need to
+                build better futures r themselves and their communities.
               </p>
               <p className="text-gray-600 mb-6">
                 Through education, skills development, and community engagement,
@@ -33,21 +33,25 @@ const About = () => {
                   Our Vision
                 </h4>
                 <p className="text-gray-700">
-                  We envision a world where every woman and girl in Nigeria has
+                  We envision a world where every woman and girl in Africa has
                   the opportunity to live with dignity, free from poverty and
-                  discrimination, and where communities thrive through sustainable
-                  development and peace-building initiatives.
+                  discrimination, and where communities thrive through
+                  sustainable development and peace-building initiatives.
                 </p>
               </div>
             </div>
 
             <div className="grid grid-cols-2 gap-4">
               <div className="bg-blue-100 p-6 rounded-lg">
-                <div className="text-blue-600 text-4xl font-bold mb-2">100+</div>
+                <div className="text-blue-600 text-4xl font-bold mb-2">
+                  100+
+                </div>
                 <p className="text-gray-700">Women Empowered</p>
               </div>
               <div className="bg-yellow-100 p-6 rounded-lg">
-                <div className="text-yellow-600 text-4xl font-bold mb-2">5+</div>
+                <div className="text-yellow-600 text-4xl font-bold mb-2">
+                  5+
+                </div>
                 <p className="text-gray-700">Active Projects</p>
               </div>
               <div className="bg-green-100 p-6 rounded-lg">

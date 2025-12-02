@@ -213,11 +213,11 @@ const Universal_Causes = () => {
           </h2>
           <div className="mt-4 h-1 w-20 bg-blue-600 mx-auto"></div>
           <p className="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">
-            As a Pan-African organization anchored in Nigeria, COPIN operates on
-            pillars that are women/girls/vulnerable-led in both design and
-            benefit. We champion African-led solutions across the following
-            thematic areas, ensuring inclusivity and dedicated support for the
-            healing and engagement of men and boys.
+            As a Pan-African organization anchored in Africa (Nig), COPIN
+            operates on pillars that are women/girls/vulnerable-led in both
+            design and benefit. We champion African-led solutions across the
+            following thematic areas, ensuring inclusivity and dedicated support
+            for the healing and engagement of men and boys.
           </p>
         </div>
 

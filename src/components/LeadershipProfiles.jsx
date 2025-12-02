@@ -233,7 +233,7 @@ const LeadershipProfiles = () => {
       shortBio:
         "Seasoned professional with 25+ years of experience in Peace and Conflict Resolution, Social Work, Humanitarian Development, and Pastoral Theology.",
       fullBio:
-        "Suleiman Francis (Domino) is a dedicated professional with over 25 years of intercontinental experience in Peace and Conflict Resolution, Social Work, Humanitarian Development, and Pastoral Theology. His extensive background includes working with diverse communities across multiple countries, focusing on peacebuilding, humanitarian assistance, and community development. He has been instrumental in various high-impact projects, including the rehabilitation of landmine victims in Cambodia and empowering war-affected communities in Chad and Nigeria.",
+        "Suleiman Francis (Domino) is a dedicated professional with over 25 years of intercontinental experience in Peace and Conflict Resolution, Social Work, Humanitarian Development, and Pastoral Theology. His extensive background includes working with diverse communities across multiple countries, focusing on peacebuilding, humanitarian assistance, and community development. He has been instrumental in various high-impact projects, including the rehabilitation of landmine victims in Cambodia and empowering war-affected communities in Chad and Africa (Nig).",
       contactInfo: {
         email: "dominofrank1@gmail.com",
         phone: "+351 928112 441",
@@ -247,11 +247,11 @@ const LeadershipProfiles = () => {
       shortBio:
         "Visionary leader and accomplished technologist with expertise in Computer Science and a profound commitment to peace building and youth empowerment.",
       fullBio:
-        "Visionary leader and accomplished technologist with a unique blend of expertise in Computer Science and a profound commitment to peace building and youth empowerment. Currently serving as President, CEO, and Co-founder of Corridors of Peace International Nigeria, driving initiatives for conflict resolution and sustainable development. Brings over a decade of experience in technology roles, including current service as a Technologist within academia, combined with extensive voluntary service focused on education, mentorship, and community development across Nigeria and Chad. Adept at strategic planning, program development, and fostering collaboration for impactful social change.",
+        "Visionary leader and accomplished technologist with a unique blend of expertise in Computer Science and a profound commitment to peace building and youth empowerment. Currently serving as President, CEO, and Co-founder of Corridors of Peace International Africa (Nig), driving initiatives for conflict resolution and sustainable development. Brings over a decade of experience in technology roles, including current service as a Technologist within academia, combined with extensive voluntary service focused on education, mentorship, and community development across Africa (Nig) and Chad. Adept at strategic planning, program development, and fostering collaboration for impactful social change.",
       contactInfo: {
-        email: "Corridorsofpeacenigeria@gmail.com",
+        email: "CorridorsofpeaceAfrica (Nig)@gmail.com",
         phone: "+234 803 946 6260",
-        location: "Nigeria",
+        location: "Africa (Nig)",
       },
     },
     {
@@ -261,7 +261,7 @@ const LeadershipProfiles = () => {
       shortBio:
         "Seasoned professional with 25+ years of experience in Peace and Conflict Resolution, Social Work, Humanitarian Development, and Pastoral Theology.",
       fullBio:
-        "Suleiman Francis (Domino) is a dedicated professional with over 25 years of intercontinental experience in Peace and Conflict Resolution, Social Work, Humanitarian Development, and Pastoral Theology. His extensive background includes working with diverse communities across multiple countries, focusing on peacebuilding, humanitarian assistance, and community development. He has been instrumental in various high-impact projects, including the rehabilitation of landmine victims in Cambodia and empowering war-affected communities in Chad and Nigeria.",
+        "Suleiman Francis (Domino) is a dedicated professional with over 25 years of intercontinental experience in Peace and Conflict Resolution, Social Work, Humanitarian Development, and Pastoral Theology. His extensive background includes working with diverse communities across multiple countries, focusing on peacebuilding, humanitarian assistance, and community development. He has been instrumental in various high-impact projects, including the rehabilitation of landmine victims in Cambodia and empowering war-affected communities in Chad and Africa (Nig).",
       contactInfo: {
         email: "dominofrank1@gmail.com",
         phone: "+351 928112 441",

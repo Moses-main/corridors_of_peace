@@ -24,7 +24,7 @@ const Home = () => {
         {/* <Universal_Causes /> */}
         {/* <Donate /> */}
         <Organization />
-        <Contact />
+        {/* <Contact /> */}
       </motion.div>
     </>
   );

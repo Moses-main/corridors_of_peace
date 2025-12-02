@@ -30,13 +30,13 @@ const Donate = () => {
       className="py-16 bg-gradient-to-r from-blue-100 to-blue-200"
     >
       <div className="max-w-7xl mxo px-4 sm:px-6 lg:px-8">
-      <div className="lg:grid lg:grid-cols-2 lg:gap-12 items-center">
+        <div className="lg:grid lg:grid-cols-2 lg:gap-12 items-center">
           <div className="mb-12 lg:mb-0">
             <h2 className="text-3xl font-bold mb-6">Make a Difference Today</h2>
             <p className="text-gray-900 mb-6 text-lg">
               Your generous donation will help us continue our mission to
-              empower women and girls in Nigeria. Every contribution, no matter
-              the size, makes a significant impact.
+              empower women and girls in Africa (Nig). Every contribution, no
+              matter the size, makes a significant impact.
             </p>
             <div className="space-y-4">
               <div className="flex items-center space-x-2">
