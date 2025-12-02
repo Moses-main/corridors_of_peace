@@ -31,7 +31,7 @@ const projects = [
     location: "Multiple regions",
     beneficiaries: "50+ women entrepreneurs",
     status: "Ongoing",
-    image: "/images/copin_market.jpg",
+    image: "/images/economic.jpg",
   },
   {
     id: 4,

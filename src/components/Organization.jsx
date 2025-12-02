@@ -14,11 +14,7 @@ const Organization = () => {
       logo: "/images/partners/ASHNA_logo.jpeg",
       description: "Action for Social and Human Needs in Africa",
     },
-    // {
-    //   name: "Rotary Club",
-    //   logo: "/images/partners/rotary.jpg",
-    //   description: "Rotary International",
-    // },
+
     {
       name: "Rotary Foundation",
       logo: "/images/partners/rotarylogo.jpg",

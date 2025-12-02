@@ -88,7 +88,7 @@ const AboutPage = () => {
                 <p className="text-gray-700 font-medium">Active Projects</p>
               </div>
               <div className="text-center p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                <div className="text-5xl font-bold text-blue-600 mb-2">1</div>
+                <div className="text-5xl font-bold text-blue-600 mb-2">2</div>
                 <p className="text-gray-700 font-medium">
                   Partner Organization
                 </p>

@@ -130,29 +130,30 @@ const DonatePage = () => {
                     {[
                       {
                         label: "Account Name",
-                        value: bankDetails.accountName,
+                        value: "CORRIDORS OF PEACE",
                         id: "intlAccountName",
                       },
                       {
                         label: "Account Number",
-                        value: bankDetails.accountNumber,
+                        value: "CH 27 8093 9000 0045 62641",
                         id: "intlAccountNumber",
                       },
                       {
                         label: "Bank Name",
-                        value: bankDetails.bankName,
+                        value: "Raiffeisen Bank IBAN ",
                         id: "intlBankName",
                       },
-                      {
-                        label: "SWIFT Code",
-                        value: bankDetails.swiftCode,
-                        id: "swiftCode",
-                      },
-                      {
-                        label: "Bank Address",
-                        value: bankDetails.bankAddress,
-                        id: "bankAddress",
-                      },
+                      // {
+                      //   label: "SWIFT Code",
+                      //   value: bankDetails.swiftCode,
+                      //   id: "swiftCode",
+                      // },
+                      // {
+                      //   label: "Bank Address",
+                      //   value: bankDetails.bankAddress,
+                      //   id: "bankAddress",
+                      // }
+                      ,
                     ].map((item) => (
                       <div
                         key={item.id}
@@ -222,13 +223,13 @@ const DonatePage = () => {
                   <div className="absolute -top-4 -left-4 w-24 h-24 rounded-full bg-blue-200 opacity-30"></div>
                   <div className="absolute -bottom-4 -right-4 w-24 h-24 rounded-full bg-blue-300 opacity-30"></div>
                   <div className="relative z-10 mx-auto w-40 h-40 bg-white rounded-full shadow-lg flex items-center justify-center p-2">
-                    <img 
-                      src="/images/logo/cop_logo2.jpg" 
+                    <img
+                      src="/images/logo/cop_logo2.jpg"
                       alt="Corridors of Peace Logo"
                       className="h-full w-full rounded-full object-cover border-2 border-white"
                       onError={(e) => {
-                        e.target.onerror = null; 
-                        e.target.src = '/images/logo/cop_logo1.jpg';
+                        e.target.onerror = null;
+                        e.target.src = "/images/logo/cop_logo1.jpg";
                       }}
                     />
                   </div>
