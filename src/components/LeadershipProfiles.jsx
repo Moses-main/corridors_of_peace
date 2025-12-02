@@ -256,7 +256,7 @@ const LeadershipProfiles = () => {
     },
     {
       name: "Patience",
-      role: "Secretary",
+      role: "Secretary (Nig)",
       image: "/images/leadership/Patience.jpg",
       shortBio:
         "Seasoned professional with 25+ years of experience in Peace and Conflict Resolution, Social Work, Humanitarian Development, and Pastoral Theology.",

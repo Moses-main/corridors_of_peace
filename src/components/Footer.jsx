@@ -77,22 +77,22 @@ const Footer = () => {
     {
       name: "Dominic Frank",
       logo: "/images/footer/Dominic_Frank.jpg",
-      position: "Internation Director",
+      position: "International Director",
     },
     {
       name: "Petra Vahle",
       logo: "/images/footer/petra_vahle.jpg",
-      position: "President",
+      position: "International Women Director",
     },
     {
       name: "Urs Herzog",
       logo: "/images/footer/urs-herzog.jpeg",
-      position: "Secretary",
+      position: "International Advisor",
     },
     {
       name: "Stella Egwu",
       logo: "/images/footer/stella-egwu.jpg",
-      position: "President, CEO & Co-Founder",
+      position: "President, CEO & National Dir. Nig.",
     },
     {
       name: "Patience Dale",
