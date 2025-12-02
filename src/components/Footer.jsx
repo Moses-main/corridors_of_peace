@@ -259,7 +259,10 @@ const Footer = () => {
                     d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                   />
                 </svg>
-                <span>123 Peace Avenue, Lagos, Africa (Nig)</span>
+                <span>
+                  Royal Plaza, Obinze Port-Harcourt Road, Owerri,Imo State
+                  Africa
+                </span>
               </p>
               <p className="flex items-center">
                 <svg
@@ -279,7 +282,7 @@ const Footer = () => {
                   href="mailto:info@corridorsofpeace.org"
                   className="hover:text-white transition-colors"
                 >
-                  info@corridorsofpeace.org
+                  corridorspeacenigeria@gmail.com
                 </a>
               </p>
               <p className="flex items-center">

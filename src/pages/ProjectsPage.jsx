@@ -100,7 +100,7 @@ const projects = [
     location: "Urban and rural areas",
     beneficiaries: "300+ youth",
     status: "Ongoing",
-    image: "/copin_facilitators.jpg",  // Youth Leadership Initiative
+    image: "/copin_facilitators.jpg", // Youth Leadership Initiative
   },
   {
     id: 11,
