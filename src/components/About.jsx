@@ -58,8 +58,8 @@ const About = () => {
                 <p className="text-gray-700">Active Projects</p>
               </div>
               <div className="bg-green-100 p-6 rounded-lg">
-                <div className="text-green-600 text-4xl font-bold mb-2">1</div>
-                <p className="text-gray-700">Partner Organization</p>
+                <div className="text-green-600 text-4xl font-bold mb-2">2</div>
+                <p className="text-gray-700">Partner Organizations</p>
               </div>
               <div className="bg-purple-100 p-6 rounded-lg">
                 <div className="text-purple-600 text-4xl font-bold mb-2">

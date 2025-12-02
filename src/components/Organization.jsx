@@ -9,10 +9,21 @@ const Organization = () => {
   ];
 
   const partners = [
-    { name: "UN Women", logo: "/images/un-women-logo.png" },
-    { name: "Global Fund", logo: "/images/global-fund-logo.png" },
-    { name: "African Union", logo: "/images/african-union-logo.png" },
-    { name: "Local NGOs", logo: "/images/ngos-logo.png" },
+    {
+      name: "ASHNA",
+      logo: "/images/partners/ASHNA_logo.jpeg",
+      description: "Action for Social and Human Needs in Africa",
+    },
+    // {
+    //   name: "Rotary Club",
+    //   logo: "/images/partners/rotary.jpg",
+    //   description: "Rotary International",
+    // },
+    {
+      name: "Rotary Foundation",
+      logo: "/images/partners/rotarylogo.jpg",
+      description: "Rotary Foundation",
+    },
   ];
 
   return (
@@ -50,32 +61,73 @@ const Organization = () => {
         </div>
 
         {/* Partners Section */}
-        <div className="mt-24">
-          <h3 className="text-center text-lg font-semibold text-gray-900">
-            Trusted by leading organizations
+        {/* <div className="mt-24">
+          <div className="mt-16">
+            <h3 className="text-center text-lg font-semibold text-gray-900 mb-8">
+              Top Partnering Organizations
+            </h3>
+            <div className="flex flex-wrap justify-center gap-6 px-4">
+              {partners.map((partner, index) => (
+                <motion.div
+                  key={partner.name}
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.3, delay: index * 0.1 }}
+                  className="flex items-center bg-white rounded-lg shadow-sm hover:shadow-md transition-all duration-300 w-full max-w-2xl h-32 overflow-hidden border border-gray-100"
+                >
+                  <div className="h-full w-32 flex-shrink-0 bg-gray-50 flex items-center justify-center p-4 border-r border-gray-100">
+                    <img
+                      className="h-16 w-auto max-w-full object-contain"
+                      src={partner.logo}
+                      alt={partner.name}
+                      onError={(e) => {
+                        e.target.onerror = null;
+                        e.target.src = '/images/placeholder-logo.png';
+                      }}
+                    />
+                  </div>
+                  <div className="p-4 flex-1 min-w-0">
+                    <h3 className="text-lg font-semibold text-gray-900 truncate">{partner.name}</h3>
+                    <p className="text-sm text-gray-600 mt-1 line-clamp-2">{partner.description}</p>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </div> */}
+        <div className="mt-16">
+          <h3 className="text-center text-lg font-semibold text-gray-900 mb-8">
+            Top Partnering Organizations
           </h3>
-          <div className="mx-auto mt-10 grid max-w-lg grid-cols-2 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-3 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-4">
+          <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-4 px-4">
             {partners.map((partner, index) => (
               <motion.div
                 key={partner.name}
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="col-span-1 flex justify-center"
+                transition={{ duration: 0.3, delay: index * 0.1 }}
+                className="flex items-center bg-white rounded-lg shadow-sm hover:shadow-md transition-all duration-300 w-full sm:w-auto sm:flex-1 sm:max-w-xs h-32 overflow-hidden border border-gray-100"
               >
-                <div className="h-16 w-full flex items-center justify-center bg-gray p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                <div className="h-full w-32 sm:w-28 flex-shrink-0 bg-gray-50 flex items-center justify-center p-3 sm:p-2 border-r border-gray-100">
                   <img
-                    className="max-h-12 max-w-[120px] object-contain"
+                    className="h-20 sm:h-16 w-auto max-w-full object-contain"
                     src={partner.logo}
                     alt={partner.name}
                     onError={(e) => {
                       e.target.onerror = null;
-                      e.target.src =
-                        "https://via.placeholder.com/120x48?text=" +
-                        encodeURIComponent(partner.name);
+                      e.target.src = "/images/placeholder-logo.png";
                     }}
                   />
+                </div>
+                <div className="p-3 sm:p-2 flex-1 min-w-0">
+                  <h3 className="text-base sm:text-sm font-semibold text-gray-900 truncate">
+                    {partner.name}
+                  </h3>
+                  <p className="text-xs text-gray-600 mt-1 line-clamp-2">
+                    {partner.description}
+                  </p>
                 </div>
               </motion.div>
             ))}

@@ -47,7 +47,7 @@ const projects = [
     id: 5,
     title: "Sustainable Farming Initiative",
     description:
-      "Empowering local farmers with sustainable agricultural techniques and resources to improve food security and livelihoods.",
+      "Empowering local farmers with sustainable agricultural techniques and resources to improve food security and livelihoods. The picture of the visit of the ambassador",
     location: "Rural Communities",
     beneficiaries: "100+ farming families",
     status: "Ongoing",
@@ -89,7 +89,7 @@ const projects = [
     description:
       "Teaching sustainable farming techniques and providing resources to improve food security and increase agricultural productivity.",
     location: "Rural farming communities",
-    beneficiaries: "200+ farmers",
+    beneficiaries: "200+ individuals",
     status: "Active",
     image: "/copin_fulani_clear.jpg",
   },
