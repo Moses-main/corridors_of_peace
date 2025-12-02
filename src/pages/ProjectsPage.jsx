@@ -162,6 +162,22 @@ const ProjectsPage = () => {
         </div>
 
         <Universal_Causes />
+
+        <div className="mt-16 mb-10 bg-blue-50 rounded-xl p-8 text-center">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">
+            Support Our Work
+          </h2>
+          <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
+            Your donation can help us expand our programs and reach more women
+            and girls in need.
+          </p>
+          <a
+            href="/donate"
+            className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+          >
+            Donate Now
+          </a>
+        </div>
       </div>
     </motion.div>
   );

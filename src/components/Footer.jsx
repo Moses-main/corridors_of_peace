@@ -95,7 +95,7 @@ const Footer = () => {
       position: "President, CEO & Co-Founder",
     },
     {
-      name: "Patience",
+      name: "Patience Dale",
       logo: "/images/footer/Patience.jpg",
       position: "Secretary",
     },
