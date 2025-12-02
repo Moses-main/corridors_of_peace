@@ -20,23 +20,26 @@ const Footer = () => {
         { name: "Our Approach", href: "/approach" },
         { name: "Projects", href: "/projects" },
         { name: "Contact", href: "/contact" },
+        { name: "Donate", href: "/donate" },
       ],
     },
     {
       title: "Our Work",
       links: [
-        { name: "Education", href: "/projects#education" },
-        { name: "Health & Wellness", href: "/projects#health" },
-        { name: "Economic Empowerment", href: "/projects#empowerment" },
+        { name: "Education Programs", href: "/projects#education" },
+        { name: "Healthcare Initiatives", href: "/projects#healthcare" },
         { name: "Community Development", href: "/projects#community" },
+        { name: "Cultural Exchange", href: "/projects#cultural" },
+        { name: "Women Empowerment", href: "/projects#empowerment" },
       ],
     },
     {
       title: "Get Involved",
       links: [
-        { name: "Donate", href: "/donate" },
-        { name: "Volunteer", href: "/volunteer" },
-        { name: "Partner With Us", href: "/partnerships" },
+        { name: "Become a Volunteer", href: "/get-involved/volunteer" },
+        { name: "Partner With Us", href: "/get-involved/partnerships" },
+        { name: "Organize an Event", href: "/get-involved/events" },
+        { name: "Start a Fundraiser", href: "/get-involved/fundraiser" },
         { name: "Careers", href: "/careers" },
       ],
     },
@@ -87,8 +90,14 @@ const Footer = () => {
       position: "Secretary",
     },
     {
-      name: "Nigerian Women Trust Fund",
-      logo: "/images/footer/partners/nigerian-women-trust-fund.png",
+      name: "Stella Egwu",
+      logo: "/images/footer/stella-egwu.jpg",
+      position: "President, CEO & Co-Founder",
+    },
+    {
+      name: "Patience",
+      logo: "/images/footer/Patience.jpg",
+      position: "Secretary",
     },
   ];
 
@@ -101,40 +110,6 @@ const Footer = () => {
 
       {/* Main Footer Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 relative">
-        {/* <div className="mb-16 pb-8 border-b border-gray-800 text-center">
-          <div className="mb-2">
-            <h3 className="text-2xl md:text-5xl font-semibold text-white inline-block relative">
-              ORGANIZATION
-              <span className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-16 h-0.5 bg-red-600"></span>
-            </h3>
-          </div>
-          <h2 className="text-2xl mt-10 font-medium text-gray-300 mb-8">
-            Knowing who you support
-          </h2>
-          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
-            {partners.map((partner, index) => (
-              <motion.div
-                key={index}
-                className="flex items-center justify-center h-20 w-20 md:h-28 md:w-28 lg:h-36 lg:w-36 xl:h-40 xl:w-40 bg-white/5 rounded-full p-2 hover:bg-white/10 transition-all duration-300"
-                whileHover={{
-                  y: -5,
-                  boxShadow:
-                    "0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
-                }}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.1 * index }}
-              >
-                <img
-                  src={partner.logo}
-                  alt={partner.name}
-                  className="h-full w-full object-cover rounded-full filter grayscale hover:grayscale-0 transition-all duration-300"
-                  title={partner.name}
-                />
-              </motion.div>
-            ))}
-          </div>
-        </div> */}
         <div className="mb-16 pb-8 border-b border-gray-800 text-center">
           <div className="mb-2">
             <h3 className="text-2xl md:text-5xl font-semibold text-white inline-block relative">
