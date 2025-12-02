@@ -248,7 +248,7 @@ const ContactPage = () => {
                       href="tel:+235123456789"
                       className="text-gray-700 hover:text-blue-600"
                     >
-                      +235 12 34 56 78
+                      +351-928-116-400
                     </a>
                   </div>
 
