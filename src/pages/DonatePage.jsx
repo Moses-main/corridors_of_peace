@@ -2,43 +2,31 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
 const DonatePage = () => {
-  const [amount, setAmount] = useState("50");
-  const [donationType, setDonationType] = useState("one-time");
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isSuccess, setIsSuccess] = useState(false);
+  // Bank details state
+  const [copied, setCopied] = useState({
+    accountNumber: false,
+    accountName: false,
+    bankName: false,
+    swiftCode: false
+  });
 
-  const presetAmounts = [25, 50, 100, 250, 500];
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-
-    // Simulate form submission
+  // Handle copy to clipboard
+  const copyToClipboard = (text, field) => {
+    navigator.clipboard.writeText(text);
+    setCopied({ ...copied, [field]: true });
     setTimeout(() => {
-      console.log("Donation submitted:", {
-        amount,
-        donationType,
-        name,
-        email,
-        message,
-      });
-      setIsSubmitting(false);
-      setIsSuccess(true);
+      setCopied({ ...copied, [field]: false });
+    }, 2000);
+  };
 
-      // Reset form
-      setAmount("50");
-      setName("");
-      setEmail("");
-      setMessage("");
-
-      // Reset success message after 5 seconds
-      setTimeout(() => {
-        setIsSuccess(false);
-      }, 5000);
-    }, 1500);
+  // Bank details
+  const bankDetails = {
+    accountName: 'CORRIDORS OF PEACE FOUNDATION',
+    accountNumber: '1234567890',
+    bankName: 'ZENITH BANK PLC',
+    swiftCode: 'ZEBLNGLA',
+    bankAddress: '123 Peace Avenue, Abuja, Nigeria',
+    note: 'Please include your full name and email in the transaction description for our records.'
   };
 
   useEffect(() => {
@@ -57,7 +45,7 @@ const DonatePage = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-900 sm:text-5xl">
-            Make a Donation
+            Support Our Cause
           </h1>
           <div className="mt-4 h-1 w-20 bg-blue-600 mx-auto"></div>
           <p className="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">
@@ -66,348 +54,191 @@ const DonatePage = () => {
           </p>
         </div>
 
-        <div className="max-w-3xl mx-auto bg-white rounded-xl shadow-md overflow-hidden">
+        <div className="max-w-6xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden">
           <div className="md:flex">
-            <div className="p-8 md:w-1/2 bg-blue-600 text-white">
-              <h2 className="text-2xl font-bold mb-4">Why Donate?</h2>
-              <ul className="space-y-4">
-                <li className="flex items-start">
-                  <svg
-                    className="h-6 w-6 text-blue-200 mr-2 flex-shrink-0"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                  <span>
-                    100% of your donation goes directly to our programs
-                  </span>
-                </li>
-                <li className="flex items-start">
-                  <svg
-                    className="h-6 w-6 text-blue-200 mr-2 flex-shrink-0"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                  <span>
-                    Tax-deductible in the United States (EIN: XX-XXXXXXX)
-                  </span>
-                </li>
-                <li className="flex items-start">
-                  <svg
-                    className="h-6 w-6 text-blue-200 mr-2 flex-shrink-0"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                  <span>Secure and encrypted payment processing</span>
-                </li>
-              </ul>
+            {/* Left Side - Bank Details */}
+            <div className="p-8 md:w-1/2 bg-white">
+              <h2 className="text-2xl font-bold text-gray-800 mb-6">Bank Transfer Details</h2>
+              
+              <div className="space-y-6">
+                <div className="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                  <h3 className="text-lg font-medium text-gray-800 mb-4">Local Transfer (Nigeria)</h3>
+                  
+                  <div className="space-y-4">
+                    {[
+                      { label: 'Account Name', value: bankDetails.accountName, id: 'accountName' },
+                      { label: 'Account Number', value: bankDetails.accountNumber, id: 'accountNumber' },
+                      { label: 'Bank Name', value: bankDetails.bankName, id: 'bankName' },
+                    ].map((item) => (
+                      <div key={item.id} className="border-b border-gray-100 pb-3">
+                        <p className="text-sm text-gray-500">{item.label}</p>
+                        <div className="flex justify-between items-center mt-1">
+                          <p className="font-medium text-gray-800">{item.value}</p>
+                          <button
+                            onClick={() => copyToClipboard(item.value, item.id)}
+                            className="text-blue-600 hover:text-blue-800 text-sm font-medium flex items-center"
+                            title="Copy to clipboard"
+                          >
+                            {copied[item.id] ? 'Copied!' : 'Copy'}
+                            <svg
+                              className="w-4 h-4 ml-1"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth="2"
+                                d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"
+                              />
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
 
-              <div className="mt-8 bg-blue-700 p-4 rounded-lg">
-                <h3 className="font-semibold mb-2">Other Ways to Give</h3>
-                <ul className="text-sm space-y-2">
-                  <li>• Bank Transfer</li>
-                  <li>• Check by Mail</li>
-                  <li>• Corporate Matching</li>
-                  <li>• Stock Donations</li>
-                </ul>
-                <p className="text-xs mt-2 text-blue-200">
-                  Contact us at donations@corridorsofpeace.org for more
-                  information.
-                </p>
+                <div className="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                  <h3 className="text-lg font-medium text-gray-800 mb-4">International Transfer</h3>
+                  
+                  <div className="space-y-4">
+                    {[
+                      { label: 'Account Name', value: bankDetails.accountName, id: 'intlAccountName' },
+                      { label: 'Account Number', value: bankDetails.accountNumber, id: 'intlAccountNumber' },
+                      { label: 'Bank Name', value: bankDetails.bankName, id: 'intlBankName' },
+                      { label: 'SWIFT Code', value: bankDetails.swiftCode, id: 'swiftCode' },
+                      { label: 'Bank Address', value: bankDetails.bankAddress, id: 'bankAddress' },
+                    ].map((item) => (
+                      <div key={item.id} className="border-b border-gray-100 pb-3">
+                        <p className="text-sm text-gray-500">{item.label}</p>
+                        <div className="flex justify-between items-center mt-1">
+                          <p className="font-medium text-gray-800">{item.value}</p>
+                          <button
+                            onClick={() => copyToClipboard(item.value, item.id)}
+                            className="text-blue-600 hover:text-blue-800 text-sm font-medium flex items-center"
+                            title="Copy to clipboard"
+                          >
+                            {copied[item.id] ? 'Copied!' : 'Copy'}
+                            <svg
+                              className="w-4 h-4 ml-1"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth="2"
+                                d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"
+                              />
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="bg-blue-50 p-4 rounded-lg border border-blue-100">
+                  <div className="flex">
+                    <div className="flex-shrink-0">
+                      <svg className="h-5 w-5 text-blue-400" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h2a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+                      </svg>
+                    </div>
+                    <div className="ml-3">
+                      <p className="text-sm text-blue-700">
+                        {bankDetails.note}
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div className="p-8 md:w-1/2">
-              {isSuccess ? (
-                <div className="bg-green-50 border border-green-200 text-green-700 px-4 py-8 rounded-lg text-center">
-                  <svg
-                    className="h-12 w-12 text-green-500 mx-auto mb-4"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
-                  </svg>
-                  <h3 className="text-xl font-bold mb-2">Thank You!</h3>
-                  <p>
-                    Your donation has been received. A confirmation email has
-                    been sent to your inbox.
+            {/* Right Side - Giving Illustration */}
+            <div className="p-8 md:w-1/2 bg-gradient-to-br from-blue-50 to-blue-100 flex flex-col items-center justify-center text-center">
+              <div className="max-w-xs mx-auto">
+                {/* Hand holding heart icon */}
+                <div className="relative mb-8">
+                  <div className="absolute -top-4 -left-4 w-24 h-24 rounded-full bg-blue-200 opacity-30"></div>
+                  <div className="absolute -bottom-4 -right-4 w-24 h-24 rounded-full bg-blue-300 opacity-30"></div>
+                  <div className="relative z-10 mx-auto w-40 h-40 bg-white rounded-full shadow-lg flex items-center justify-center">
+                    <svg 
+                      className="w-24 h-24 text-blue-600" 
+                      fill="none" 
+                      stroke="currentColor" 
+                      viewBox="0 0 24 24"
+                    >
+                      <path 
+                        strokeLinecap="round" 
+                        strokeLinejoin="round" 
+                        strokeWidth="1.5" 
+                        d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" 
+                      />
+                      <path 
+                        strokeLinecap="round" 
+                        strokeLinejoin="round" 
+                        strokeWidth="1.5" 
+                        d="M12 15l-3-3m0 0l-3-3m3 3V7" 
+                        className="text-blue-400"
+                      />
+                    </svg>
+                  </div>
+                </div>
+
+                <h2 className="text-2xl font-bold text-gray-800 mb-4">Your Support Makes a Difference</h2>
+                <p className="text-gray-600 mb-6">
+                  Every contribution helps us create sustainable change in the lives of women and girls in Nigeria. 
+                  Your generosity provides education, resources, and opportunities for a better future.
+                </p>
+                
+                <div className="space-y-4 text-left">
+                  <div className="flex items-start">
+                    <div className="flex-shrink-0 mt-1">
+                      <div className="flex items-center justify-center h-6 w-6 rounded-full bg-blue-100 text-blue-600">
+                        <svg className="h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        </svg>
+                      </div>
+                    </div>
+                    <p className="ml-3 text-sm text-gray-700">100% of donations go directly to our programs</p>
+                  </div>
+                  
+                  <div className="flex items-start">
+                    <div className="flex-shrink-0 mt-1">
+                      <div className="flex items-center justify-center h-6 w-6 rounded-full bg-blue-100 text-blue-600">
+                        <svg className="h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        </svg>
+                      </div>
+                    </div>
+                    <p className="ml-3 text-sm text-gray-700">Tax-deductible donations</p>
+                  </div>
+                  
+                  <div className="flex items-start">
+                    <div className="flex-shrink-0 mt-1">
+                      <div className="flex items-center justify-center h-6 w-6 rounded-full bg-blue-100 text-blue-600">
+                        <svg className="h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        </svg>
+                      </div>
+                    </div>
+                    <p className="ml-3 text-sm text-gray-700">Secure and transparent process</p>
+                  </div>
+                </div>
+
+                <div className="mt-8 pt-6 border-t border-gray-200">
+                  <p className="text-sm text-gray-500">
+                    For questions about donations, email us at{" "}
+                    <a href="mailto:donate@corridorsofpeace.org" className="text-blue-600 hover:underline">
+                      donate@corridorsofpeace.org
+                    </a>
                   </p>
                 </div>
-              ) : (
-                <form onSubmit={handleSubmit}>
-                  <div className="mb-6">
-                    <label
-                      className="block text-gray-700 text-sm font-medium mb-2"
-                      htmlFor="amount"
-                    >
-                      Donation Amount (USD)
-                    </label>
-                    <div className="grid grid-cols-3 gap-3 mb-3">
-                      {presetAmounts.map((preset) => (
-                        <button
-                          key={preset}
-                          type="button"
-                          onClick={() => setAmount(preset.toString())}
-                          className={`px-4 py-2 border rounded-md text-center ${
-                            amount === preset.toString()
-                              ? "bg-blue-600 text-white border-blue-600"
-                              : "border-gray-300 hover:border-blue-500"
-                          }`}
-                        >
-                          ${preset}
-                        </button>
-                      ))}
-                      <button
-                        type="button"
-                        onClick={() => setAmount("")}
-                        className={`px-4 py-2 border rounded-md text-center ${
-                          !presetAmounts.includes(Number(amount))
-                            ? "bg-blue-600 text-white border-blue-600"
-                            : "border-gray-300 hover:border-blue-500"
-                        }`}
-                      >
-                        Other
-                      </button>
-                    </div>
-                    <div className="relative">
-                      <span className="absolute inset-y-0 left-0 pl-3 flex items-center text-gray-500">
-                        $
-                      </span>
-                      <input
-                        type="number"
-                        id="amount"
-                        value={amount}
-                        onChange={(e) => setAmount(e.target.value)}
-                        className="block w-full pl-8 pr-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
-                        placeholder="0.00"
-                        min="1"
-                        step="0.01"
-                        required
-                      />
-                    </div>
-                  </div>
-
-                  <div className="mb-6">
-                    <label className="block text-gray-700 text-sm font-medium mb-2">
-                      Donation Type
-                    </label>
-                    <div className="flex rounded-md shadow-sm">
-                      <button
-                        type="button"
-                        onClick={() => setDonationType("one-time")}
-                        className={`flex-1 py-2 px-4 border rounded-l-md text-sm font-medium ${
-                          donationType === "one-time"
-                            ? "bg-blue-600 text-white border-blue-600"
-                            : "bg-white text-gray-700 border-gray-300 hover:bg-gray-50"
-                        }`}
-                      >
-                        One-time
-                      </button>
-                      <button
-                        type="button"
-                        onClick={() => setDonationType("monthly")}
-                        className={`flex-1 py-2 px-4 border rounded-r-md text-sm font-medium ${
-                          donationType === "monthly"
-                            ? "bg-blue-600 text-white border-blue-600"
-                            : "bg-white text-gray-700 border-gray-300 hover:bg-gray-50"
-                        }`}
-                      >
-                        Monthly
-                      </button>
-                    </div>
-                  </div>
-
-                  <div className="mb-6">
-                    <label
-                      className="block text-gray-700 text-sm font-medium mb-2"
-                      htmlFor="name"
-                    >
-                      Full Name
-                    </label>
-                    <input
-                      type="text"
-                      id="name"
-                      value={name}
-                      onChange={(e) => setName(e.target.value)}
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
-                      required
-                    />
-                  </div>
-
-                  <div className="mb-6">
-                    <label
-                      className="block text-gray-700 text-sm font-medium mb-2"
-                      htmlFor="email"
-                    >
-                      Email Address
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
-                      required
-                    />
-                  </div>
-
-                  <div className="mb-6">
-                    <label
-                      className="block text-gray-700 text-sm font-medium mb-2"
-                      htmlFor="message"
-                    >
-                      Message (Optional)
-                    </label>
-                    <textarea
-                      id="message"
-                      rows="3"
-                      value={message}
-                      onChange={(e) => setMessage(e.target.value)}
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
-                      placeholder="Add a personal message..."
-                    ></textarea>
-                  </div>
-
-                  <div className="mb-6">
-                    <div className="flex items-start">
-                      <div className="flex items-center h-5">
-                        <input
-                          id="terms"
-                          type="checkbox"
-                          className="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
-                          required
-                        />
-                      </div>
-                      <div className="ml-3 text-sm">
-                        <label htmlFor="terms" className="text-gray-600">
-                          I agree to the{" "}
-                          <a
-                            href="/terms"
-                            className="text-blue-600 hover:underline"
-                          >
-                            terms and conditions
-                          </a>{" "}
-                          and{" "}
-                          <a
-                            href="/privacy"
-                            className="text-blue-600 hover:underline"
-                          >
-                            privacy policy
-                          </a>
-                          .
-                        </label>
-                      </div>
-                    </div>
-                  </div>
-
-                  <button
-                    type="submit"
-                    disabled={isSubmitting}
-                    className="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 disabled:opacity-50 disabled:cursor-not-allowed"
-                  >
-                    {isSubmitting ? (
-                      <>
-                        <svg
-                          className="animate-spin -ml-1 mr-3 h-5 w-5 text-white"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                        >
-                          <circle
-                            className="opacity-25"
-                            cx="12"
-                            cy="12"
-                            r="10"
-                            stroke="currentColor"
-                            strokeWidth="4"
-                          ></circle>
-                          <path
-                            className="opacity-75"
-                            fill="currentColor"
-                            d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
-                          ></path>
-                        </svg>
-                        Processing...
-                      </>
-                    ) : (
-                      `Donate ${
-                        donationType === "monthly" ? "Monthly" : "Now"
-                      } $${amount || "0"}`
-                    )}
-                  </button>
-
-                  <div className="mt-4 text-center text-xs text-gray-500">
-                    <p>Secure payment processing powered by Stripe®</p>
-                    <div className="mt-2 flex justify-center space-x-4">
-                      <svg
-                        className="h-6 w-auto"
-                        fill="currentColor"
-                        viewBox="0 0 38 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"
-                          fill="#6772E5"
-                        ></path>
-                        <path
-                          d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"
-                          fill="#fff"
-                        ></path>
-                        <path
-                          d="M13.9 6.6c-1.6 0-2.9.6-3.7 1.7l.1-.1-1.5 8.9h-3l2.6-15.1h3l-1 5.7c.6-.8 1.5-1.3 2.7-1.3.1 0 .2 0 .3.1v2.9c-.1 0-.3-.1-.5-.1-1.1 0-1.8.6-2.1 1.6l-1.3 7.5h3l1.3-7.5c.2-1.1.9-1.7 2.1-1.7 1.2 0 1.8.6 1.8 1.7v7.5h3v-8.3c0-2.1-1.2-3.6-3.4-3.6z"
-                          fill="#6772E5"
-                        ></path>
-                        <path
-                          d="M32 6.6c-1.6 0-2.9.6-3.7 1.7l.1-.1-1.5 8.9h-3l2.6-15.1h3l-1 5.7c.6-.8 1.5-1.3 2.7-1.3.1 0 .2 0 .3.1v2.9c-.1 0-.3-.1-.5-.1-1.1 0-1.8.6-2.1 1.6l-1.3 7.5h3l1.3-7.5c.2-1.1.9-1.7 2.1-1.7 1.2 0 1.8.6 1.8 1.7v7.5h3v-8.3c0-2.1-1.2-3.6-3.4-3.6z"
-                          fill="#6772E5"
-                        ></path>
-                      </svg>
-                      <svg
-                        className="h-6 w-auto"
-                        fill="currentColor"
-                        viewBox="0 0 38 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"
-                          fill="#5469D4"
-                        ></path>
-                        <path
-                          d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"
-                          fill="#fff"
-                        ></path>
-                        <path
-                          d="M28 6h-2.7c-.7 0-1.3.5-1.5 1.2l-2.9 8.3h-3.8l-1.2-3.5c-.3-.8-1-1.3-1.8-1.3h-2.2c-.4 0-.8.3-.9.7L9.7 15H6l5.5-14h3.5l2.3 6.1c.2.5.7.9 1.3.9h1.7c.6 0 1.1-.4 1.3-.9L24 6h4z"
-                          fill="#5469D4"
-                        ></path>
-                      </svg>
-                    </div>
-                  </div>
-                </form>
-              )}
+              </div>
             </div>
           </div>
         </div>
