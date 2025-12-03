@@ -47,7 +47,7 @@ const projects = [
     id: 5,
     title: "Sustainable Farming Initiative",
     description:
-      "Empowering local farmers with sustainable agricultural techniques and resources to improve food security and livelihoods. ",
+      "Empowering local farmers with sustainable agricultural techniques and resources to improve food security and livelihoods. The visit of the Switzerland Ambassador ",
     location: "Rural Communities",
     beneficiaries: "100+ farming families",
     status: "Ongoing",
@@ -65,7 +65,7 @@ const projects = [
   },
   {
     id: 7,
-    title: "Women's Skills Development",
+    title: "Women's Mobilization Program",
     description:
       "Providing vocational training and skill-building workshops to enhance women's employability and entrepreneurship.",
     location: "Various Communities",
