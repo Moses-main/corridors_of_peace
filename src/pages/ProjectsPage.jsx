@@ -26,12 +26,11 @@ const projects = [
   {
     id: 3,
     title: "Economic Empowerment",
-    description:
-      "Supporting women entrepreneurs with microloans, business training, and market access to start and grow their businesses.",
+    description: "Manual harvesting and miling by rural women.",
     location: "Multiple regions",
     beneficiaries: "50+ women entrepreneurs",
     status: "Ongoing",
-    image: "/images/economic.jpg",
+    image: "/images/project/women_harvesters.jpg",
   },
   {
     id: 4,
