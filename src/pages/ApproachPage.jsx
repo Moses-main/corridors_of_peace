@@ -7,64 +7,136 @@ const ApproachPage = () => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
-      className="pt-24 pb-16 bg-white min-h-screen"
+      className="pt-20 md:pt-24 pb-12 md:pb-16 bg-white min-h-screen"
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 2xl:max-w-7xl">
         {/* Header */}
-        <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 sm:text-5xl mb-4">
+        <div className="text-center mb-10 md:mb-12 px-2">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-3 sm:mb-4">
             Our Approach
           </h1>
-          <div className="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
-          <p className="text-xl text-gray-600">
-            How we're building a better future for African women, girls, and
-            communities
+          <div className="w-20 sm:w-24 h-1 bg-blue-600 mx-auto mb-4 sm:mb-6"></div>
+          <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto mb-10">
+            Integrated Development for Lasting Peace in Africa
           </p>
 
           {/* Three Pillars */}
-          <div className="max-w-3xl mx-auto bg-blue-50/30 p-8 rounded-xl border border-blue-100 mb-12">
-            <p className="text-lg text-gray-700 mb-8 leading-relaxed text-justify">
-              We implement a holistic, three-pillar approach to women's
-              empowerment, addressing the root causes of inequality and conflict
-              by strategically linking peace, prosperity, and protection:
+          <div className="max-w-4xl mx-auto bg-blue-50/30 p-5 sm:p-6 md:p-8 rounded-xl border border-blue-100 mb-10 md:mb-12">
+            <p className="text-base sm:text-lg text-gray-700 mb-6 sm:mb-8 leading-relaxed text-justify">
+              We champion a holistic model for Africa's renewal, built on the
+              belief that sustainable progress requires the full participation
+              and healing of all community members. Our approach intertwines
+              economic empowerment, social protection, and social cohesion with
+              restorative justice, fostering resilient communities where
+              everyone can thrive.
             </p>
-            <ul className="space-y-6">
+
+            <div className="space-y-8">
               {[
                 {
-                  title: "Building Corridors of Peace",
-                  content:
-                    "We empower women as mediators, community leaders, and agents of social cohesion. Through inclusive dialogue, trauma healing, and conflict resolution training, we enable them to create and sustain vital corridors of peace within and between communities, forming the bedrock for safe and stable societies.",
+                  title: "1. Foundational Empowerment for All",
+                  description:
+                    "We build the essential infrastructure for individual and collective well-being, creating a just foundation for development.",
+                  items: [
+                    "Inclusive Economic & Social Development: We create access to education, technology, sustainable livelihoods, and robust social protection programs, with a targeted focus on empowering women and girls while actively engaging men as partners in economic equity.",
+                    "Health Justice & Well-being: We advocate for community-led health systems, comprehensive sexual and reproductive care, and psychosocial support, recognizing health as a cornerstone of human dignity and productivity for all.",
+                    "Environmental Stewardship & Climate Resilience: We empower communities—especially women—as primary stewards of natural resources, promoting practices that secure ecosystems and build resilience against climate change.",
+                  ],
                 },
                 {
-                  title: "Creating Economic Opportunities",
-                  content:
-                    "We unlock economic agency by providing access to skills training, seed capital, market linkages, and entrepreneurship support. By fostering women-led enterprises and inclusive value chains, we transform economic opportunities into engines for poverty reduction, family stability, and community development.",
+                  title: "2. Healing, Justice & Social Cohesion",
+                  description:
+                    "We address historical and personal trauma to mend the social fabric and build authentic peace.",
+                  items: [
+                    "Restorative Justice & Community Dialogue: We implement restorative circles and inclusive dialogue platforms that bring women, men, youth, and elders together to address grievances, resolve conflicts, and rebuild broken trust, strengthening communal bonds.",
+                    "Gender-Responsive Healing Spaces: We facilitate safe spaces for women and girls to heal and lead, alongside dedicated programs for men and boys to address trauma, redefine masculinity, and become committed allies in gender equality.",
+                    "Arts, Culture & Collective Memory: We deploy arts, music, and storytelling as powerful tools for therapy, cultural preservation, and forging a shared identity that transcends division.",
+                  ],
                 },
                 {
-                  title: "Fortifying with Social Protection",
-                  content:
-                    "We advocate for and provide access to essential social protection programs, including health services, legal aid, safety nets, and violence prevention systems. This safety layer ensures that women and girls have the security and support necessary to recover from crisis, participate fully in the economy, and lead in their communities without fear.",
+                  title:
+                    "3. Leadership, Innovation & Institutional Development",
+                  description:
+                    "We cultivate the next generation of leaders and build strong systems for sustained impact.",
+                  items: [
+                    "Inclusive Leadership Development: We invest in leadership and entrepreneurial training for women and girls, coupled with programs that prepare men as equitable leaders in their homes and communities, ensuring diverse voices guide development.",
+                    "Youth & Innovation Ecosystems: We establish innovation hubs, STEM access, and career pathways—particularly for girls—while creating platforms where young men and women collaboratively solve local challenges.",
+                    "Pan-African Partnerships & Research: We forge strategic alliances across sectors and borders to share knowledge, scale solutions, and advocate for policies that support equitable and inclusive development.",
+                  ],
                 },
-              ].map((pillar, index) => (
-                <li key={index} className="relative pl-8">
-                  <div className="absolute left-0 top-1 w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center">
-                    <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
-                  </div>
-                  <h3 className="text-xl font-semibold text-blue-800 mb-2">
-                    {pillar.title}
-                  </h3>
-                  <p className="text-gray-700 leading-relaxed text-justify">
-                    {pillar.content}
-                  </p>
-                </li>
+              ].map((section, sectionIndex) => (
+                <div
+                  key={sectionIndex}
+                  className="bg-white p-6 rounded-lg shadow-sm border border-gray-100"
+                >
+                  <h2 className="text-2xl font-bold text-blue-800 mb-3">
+                    {section.title}
+                  </h2>
+                  <p className="text-gray-700 mb-4">{section.description}</p>
+                  <ul className="space-y-4">
+                    {section.items.map((item, itemIndex) => (
+                      <li key={itemIndex} className="flex">
+                        <div className="flex-shrink-0 h-5 w-5 text-blue-600 mt-1">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                          >
+                            <path
+                              fillRule="evenodd"
+                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                              clipRule="evenodd"
+                            />
+                          </svg>
+                        </div>
+                        <span className="ml-3 text-gray-700 text-justify">
+                          {item}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               ))}
-            </ul>
-            <p className="mt-8 text-gray-700 leading-relaxed text-justify">
-              These three pillars form the foundation of our work, implemented
-              through targeted, gender-specific programs that address the unique
-              needs of all community members while fostering collective healing
-              and empowerment.
-            </p>
+            </div>
+
+            <div className="mt-10 bg-blue-50 p-6 rounded-lg border border-blue-100">
+              <h3 className="text-xl font-semibold text-blue-800 mb-4">
+                Our Commitments to Equitable Implementation
+              </h3>
+              <ul className="space-y-3">
+                <li className="flex items-start">
+                  <span className="text-blue-600 mr-2">•</span>
+                  <span className="text-justify">
+                    <strong>African-Led & Representative Governance:</strong>{" "}
+                    Our leadership, staff, and decision-making bodies are
+                    predominantly composed of African women, with strong
+                    representation from marginalized groups and the meaningful
+                    inclusion of male allies.
+                  </span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-600 mr-2">•</span>
+                  <span className="text-justify">
+                    <strong>Strategic, Inclusive Investment:</strong> The
+                    majority of our resources directly empower women and girls,
+                    with significant allocation to mixed-gender initiatives that
+                    foster social cohesion, male allyship, and holistic
+                    community development.
+                  </span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-600 mr-2">•</span>
+                  <span className="text-justify">
+                    <strong>Impact Measured by Holistic Progress:</strong> We
+                    track success through the advancement of women and girls in
+                    education, health, and leadership, alongside critical
+                    metrics on social cohesion, restorative justice outcomes,
+                    community resilience, and the active participation of all
+                    genders in building a shared future.
+                  </span>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
 
@@ -77,7 +149,7 @@ const ApproachPage = () => {
         </div>
 
         {/* Gender-Specific Healing */}
-        <section
+        {/* <section
           id="gender-healing"
           className="mb-16 p-8 border border-gray-100 rounded-lg bg-white hover:shadow-md transition-shadow duration-300"
         >
@@ -115,10 +187,10 @@ const ApproachPage = () => {
               </div>
             ))}
           </div>
-        </section>
+        </section> */}
 
         {/* Section Divider */}
-        <div className="relative mb-12 mt-16 text-center">
+        {/* <div className="relative mb-12 mt-16 text-center">
           <div
             className="absolute inset-0 flex items-center"
             aria-hidden="true"
@@ -130,10 +202,10 @@ const ApproachPage = () => {
               Our Strategic Objectives
             </span>
           </div>
-        </div>
+        </div> */}
 
         {/* Primary Objectives */}
-        <section
+        {/* <section
           id="primary-objectives"
           className="mb-16 p-8 border border-gray-100 rounded-lg bg-white hover:shadow-md transition-shadow duration-300"
         >
@@ -190,10 +262,10 @@ const ApproachPage = () => {
               </div>
             ))}
           </div>
-        </section>
+        </section> */}
 
         {/* Secondary Objectives */}
-        <section
+        {/* <section
           id="secondary-objectives"
           className="mb-16 p-8 border border-gray-100 rounded-lg bg-white hover:shadow-md transition-shadow duration-300"
         >
@@ -229,10 +301,10 @@ const ApproachPage = () => {
               </div>
             ))}
           </div>
-        </section>
+        </section> */}
 
         {/* Operational Principles */}
-        <section
+        {/* <section
           id="operational-principles"
           className="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300"
         >
@@ -283,7 +355,7 @@ const ApproachPage = () => {
               </div>
             ))}
           </div>
-        </section>
+        </section> */}
       </div>
     </motion.div>
   );

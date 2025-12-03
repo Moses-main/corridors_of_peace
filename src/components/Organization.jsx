@@ -12,7 +12,8 @@ const Organization = () => {
     {
       name: "ASHNA",
       logo: "/images/partners/ASHNA_logo.jpeg",
-      description: "Action for Social and Human Needs in Africa",
+      description:
+        "Assistance to Support Humanitarian and Need for Aid, Afghan.",
     },
 
     {
@@ -93,7 +94,7 @@ const Organization = () => {
           </div>
         </div> */}
         <div className="mt-16">
-          <h3 className="text-center text-lg font-semibold text-gray-900 mb-8">
+          <h3 className="text-center text-lg md:text-3xl font-semibold text-gray-900 mb-8">
             Top Partnering Organizations
           </h3>
           <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-4 px-4">

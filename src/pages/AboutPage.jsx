@@ -52,15 +52,6 @@ const AboutPage = () => {
               leadership of women and the solidarity of all genders.
             </p>
           </div>
-
-          <h2 className="text-2xl font-bold text-gray-900 mt-8">
-            Our Approach
-          </h2>
-          <p>
-            We take a holistic approach to women's empowerment, addressing the
-            root causes of gender inequality through education, economic
-            empowerment, and community engagement.
-          </p>
         </div>
       </div>
 
