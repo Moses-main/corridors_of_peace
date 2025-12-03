@@ -23,7 +23,7 @@ const DonatePage = () => {
   const bankDetails = {
     accountName: "CORRIDORS OF PEACE FOUNDATION",
     accountNumber: "1234567890",
-    bankName: "ZENITH BANK PLC",
+    bankName: "FIRST BANK PLC",
     swiftCode: "ZEBLNGLA",
     bankAddress: "123 Peace Avenue, Abuja, Africa (Nig)",
     note: "Please include your full name and email in the transaction description for our records.",
