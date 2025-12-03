@@ -47,7 +47,7 @@ const projects = [
     id: 5,
     title: "Sustainable Farming Initiative",
     description:
-      "Empowering local farmers with sustainable agricultural techniques and resources to improve food security and livelihoods. The picture of the visit of the ambassador",
+      "Empowering local farmers with sustainable agricultural techniques and resources to improve food security and livelihoods. ",
     location: "Rural Communities",
     beneficiaries: "100+ farming families",
     status: "Ongoing",
