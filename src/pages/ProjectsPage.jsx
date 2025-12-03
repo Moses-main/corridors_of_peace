@@ -26,7 +26,8 @@ const projects = [
   {
     id: 3,
     title: "Economic Empowerment",
-    description: "Manual harvesting and miling by rural women.",
+    description:
+      "Manual harvesting and milling by rural women. Would you be generous enough to donate a harvester or a miller ?",
     location: "Multiple regions",
     beneficiaries: "50+ women entrepreneurs",
     status: "Ongoing",
@@ -40,7 +41,7 @@ const projects = [
     location: "Rural Africa (Nig)",
     beneficiaries: "500+ women and children",
     status: "Completed",
-    image: "/copin_elderly_woman.jpg",
+    image: "/images/girls.jpeg",
   },
   {
     id: 5,
