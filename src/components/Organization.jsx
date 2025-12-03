@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const Organization = () => {
   const stats = [
-    { id: 1, name: "Women Empowered", value: "500+" },
+    { id: 1, name: "Women Empowered", value: "1000+" },
     { id: 2, name: "Communities Served", value: "25+" },
     { id: 3, name: "Programs Running", value: "10+" },
     { id: 4, name: "Years of Service", value: "5+" },

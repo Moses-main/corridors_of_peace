@@ -7,8 +7,8 @@ const projects = [
     id: 1,
     title: "Women's Empowerment in Guereda",
     description:
-      "Empowering women through vocational training, education, and leadership development programs in the Guereda region of Africa (Nig).",
-    location: "Guereda, Africa (Nig)",
+      "Empowering women through auto-mechanic training, education, and leadership development programs in the Guereda region of Africa (Nig).",
+    location: "Guereda, Africa",
     beneficiaries: "100+ women and girls",
     status: "Ongoing",
     image: "/images/project/copin_skill2.jpg",

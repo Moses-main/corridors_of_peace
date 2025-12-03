@@ -314,10 +314,10 @@ const DonatePage = () => {
                   <p className="text-sm text-gray-500">
                     For questions about donations, email us at{" "}
                     <a
-                      href="mailto:donate@corridorsofpeace.org"
+                      href="mailto:corridorsofpeacenigeria@gmail.com"
                       className="text-blue-600 hover:underline"
                     >
-                      donate@corridorsofpeace.org
+                      corridorsofpeacenigeria@gmail.com
                     </a>
                   </p>
                 </div>
