@@ -36,7 +36,7 @@ const Hero = () => {
           <div className="relative w-full mb-8">
             <div className="flex items-center justify-center gap-4">
               <div className="h-px flex-1 bg-gradient-to-r from-transparent via-white/50 to-transparent"></div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-blue-100 italic font-serif tracking-wide px-4">
+              <h2 className="text-xl sm:text-md md:text-lg font-bold text-blue-100 italic font-serif tracking-wide px-4">
                 <span className="relative">
                   <span className="absolute -left-4 -top-3 text-lg text-blue-300/50 font-serif">
                     "
