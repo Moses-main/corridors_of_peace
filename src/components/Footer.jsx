@@ -31,6 +31,7 @@ const Footer = () => {
         { name: "Community Development", href: "/projects#community" },
         { name: "Cultural Exchange", href: "/projects#cultural" },
         { name: "Women Empowerment", href: "/projects#empowerment" },
+        { name: "Environmental Research", href: "/projects#empowerment" },
       ],
     },
     {
