@@ -87,7 +87,7 @@ const projects = [
     id: 9,
     title: "Vocational Training Program",
     description:
-      "Teaching sustainable farming techniques and providing resources to improve food security and increase agricultural productivity.",
+      "Empowering women with professional sewing and tailoring skills to create sustainable livelihoods and entrepreneurial opportunities in their communities.",
     location: "Rural farming communities",
     beneficiaries: "200+ individuals",
     status: "Active",
