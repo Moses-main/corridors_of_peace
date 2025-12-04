@@ -287,7 +287,7 @@ const Footer = () => {
                 </svg>
                 <span>
                   P.30 Federal Housing Estate First Gate, (opposite Refugee
-                  Camp) Uni Agric Road Northbank. Makurdi Venue State Nigeria.
+                  Camp) Uni Agric Road Northbank. Makurdi Benue State Nigeria.
                 </span>
               </p>
               <p className="flex items-center">
