@@ -249,22 +249,25 @@ const LeadershipProfiles = () => {
       fullBio:
         "Visionary leader and accomplished technologist with a unique blend of expertise in Computer Science and a profound commitment to peace building and youth empowerment. Currently serving as President, CEO, and Co-founder of Corridors of Peace International Africa (Nig), driving initiatives for conflict resolution and sustainable development. Brings over a decade of experience in technology roles, including current service as a Technologist within academia, combined with extensive voluntary service focused on education, mentorship, and community development across Africa (Nig) and Chad. Adept at strategic planning, program development, and fostering collaboration for impactful social change.",
       contactInfo: {
-        email: "CorridorsofpeaceAfrica (Nig)@gmail.com",
+        email: "Corridorsofpeacenigeria@gmail.com",
         phone: "+234 803 946 6260",
         location: "Africa (Nig)",
       },
     },
     {
-      name: "Patience",
+      name: "Patience Dale",
       role: "Secretary (Nig)",
       image: "/images/leadership/Patience.jpg",
       shortBio:
-        "Seasoned professional with 25+ years of experience in Peace and Conflict Resolution, Social Work, Humanitarian Development, and Pastoral Theology.",
-      fullBio:
-        "Suleiman Francis (Domino) is a dedicated professional with over 25 years of intercontinental experience in Peace and Conflict Resolution, Social Work, Humanitarian Development, and Pastoral Theology. His extensive background includes working with diverse communities across multiple countries, focusing on peacebuilding, humanitarian assistance, and community development. He has been instrumental in various high-impact projects, including the rehabilitation of landmine victims in Cambodia and empowering war-affected communities in Chad and Africa (Nig).",
+        "Patience Dale is the General Secretary of Corridors of Peace Humanitarian Foundation - Nigeria and coordinates the Middle Belt Region, operating from the organization's office in North Bank, Makurdi, Benue State. In this dual capacity, she provides strategic administrative leadership and drives regional initiatives aimed at promoting peace, human rights, and sustainable development across one of Nigeria's most critical zones..",
+      fullBio: `Patience Dale is the General Secretary of Corridors of Peace Humanitarian Foundation - Nigeria and coordinates the Middle Belt Region, operating from the organization's office in North Bank, Makurdi, Benue State. In this dual capacity, she provides strategic administrative leadership and drives regional initiatives aimed at promoting peace, human rights, and sustainable development across one of Nigeria's most critical zones\n
+
+                A British-Nigerian with a master’s degree in Soil and Water Engineering, Patience brings a distinctive blend of technical insight and hands-on community experience to her role. Her professional journey spans geology, water resource management, school administration, and humanitarian coordination—with a consistent focus on education, gender equality, and the empowerment of migrants and vulnerable groups.\n
+                \nHer prior work in conflict resolution, peace education, and vocational training—including field experience in Chad—aligns closely with the mission of Corridors of Peace. As General Secretary and Middle Belt Coordinator, she oversees program implementation, stakeholder engagement, and day-to-day operations, ensuring that regional activities reflect the organization's commitment to justice and social cohesion.\n,
+                Patience reports directly to Madam Stell Egwu, the Executive Chair, and works diligently to translate the organization's vision into impactful action on the ground.`,
       contactInfo: {
-        email: "dominofrank1@gmail.com",
-        phone: "+351 928112 441",
+        email: "Corridorsofpeacenigeria@gmail.com",
+        phone: "+2347025114046",
         location: "Esteval Dos Mouros 126, 8100-0023 Alte",
       },
     },
