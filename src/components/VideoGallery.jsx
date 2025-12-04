@@ -16,17 +16,16 @@ const VideoGallery = () => {
     // Local videos
     {
       id: 2,
-      title: "Benefit Concert 2025",
-      description: "Highlights from our annual benefit concert in Switzerland",
+      title: "Economic Empowerment",
+      description: "Empowering local farmers through sustainable agricultural training and resources in Nigeria",
       category: "events",
-      localVideo:
-        "https://corridorsofpeace.online/wp-content/uploads/2025/11/Corridors-Of-Peace-Switzerland-Benefit-Concert-2025.mp4",
+      localVideo: "/videos/copin_farmers.mp4",
       thumbnail: "/images/concert-thumbnail.jpg",
     },
     {
       id: 3,
-      title: "Corridors of Peace Switzerland",
-      description: "Our journey and impact in Switzerland",
+      title: "Auto-mobile Training",
+      description: "Our auto-mobile mechanic training program providing vocational skills to Nigerian youth",
       category: "about",
       localVideo:
         "https://corridorsofpeace.online/wp-content/uploads/2025/11/VID-20251111-WA0002-1.mp4",
@@ -83,7 +82,7 @@ const VideoGallery = () => {
         {videos.filter((video) => !video.isFeatured).length > 0 && (
           <div className="mt-12">
             <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">
-              More Videos
+              Cultural Videos
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-5xl mx-auto">
               {videos
