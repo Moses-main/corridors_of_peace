@@ -33,23 +33,30 @@ const AboutPage = () => {
           <div className="space-y-4">
             <h2 className="text-2xl font-bold text-gray-900">Our Mission</h2>
             <p className="text-gray-600 text-justify leading-relaxed">
-              Our mission is to catalyze sustainable change across Africa,
-              beginning in Nigeria, by centering women and girls. We provide the
-              tools, resources, and platforms for them to lead, build, and
-              transform their own lives and communities. Through female-powered
-              initiatives and inclusive partnerships that engage men and boys,
-              we foster a cycle of empowerment, healing, and lasting peace.
+              Our mission is to catalyze sustainable peace and prosperity across
+              Africa, beginning in Nigeria, by centering women and girls as
+              architects of change. We create corridors of peace by empowering
+              them with transformative economic opportunities and foundational
+              social protection programs. We provide the tools, resources, and
+              platforms for women and girls to lead community resilience, build
+              sustainable livelihoods, and shape a future defined by security
+              and equity. Through female-powered initiatives and inclusive
+              partnerships that engage men and boys, we foster a reinforcing
+              cycle of empowerment, stability, and lasting peace.
             </p>
           </div>
 
           <div className="bg-blue-50 p-8 rounded-lg space-y-4">
             <h2 className="text-2xl font-bold text-blue-800">Our Vision</h2>
             <p className="text-gray-700 text-justify leading-relaxed">
-              We envision a thriving Africa, rooted in peace and dignity, where
-              every woman and girl has the power to shape her own destiny. We
-              see a continent where communities are resilient, environments are
-              healthy, and the well-being of all is secured through the
-              leadership of women and the solidarity of all genders.
+              We envision a thriving Africa where corridors of peace enable
+              communities to flourish. In this Africa, every woman and girl is
+              secured by robust social protection and propelled by equitable
+              economic opportunity, possessing the undeniable power to shape her
+              own destiny. We see a continent where communities are resilient
+              against conflict and hardship, environments are healthy, and the
+              well-being of all is guaranteed through the leadership of women
+              and the solidarity of all genders.
             </p>
           </div>
         </div>

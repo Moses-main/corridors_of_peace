@@ -10,8 +10,8 @@ const Hero = () => {
           style={{
             backgroundImage: "url(/hero-image.jpg)",
             backgroundPosition: "center top",
-            top: '80px', // Start below the navigation bar
-            height: 'calc(100% - 80px)' // Adjust height to account for navbar
+            top: "80px", // Start below the navigation bar
+            height: "calc(100% - 80px)", // Adjust height to account for navbar
           }}
         >
           {/* Gradient overlay at bottom for better text contrast */}
@@ -22,14 +22,14 @@ const Hero = () => {
       {/* Content with semi-transparent overlay */}
       <div className="relative z-10 w-full flex items-center justify-center min-h-[calc(100vh-80px)] pt-20 px-4">
         <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/30 -z-10"></div>
-        
+
         {/* Text container with full width and styling */}
         <div className="w-full max-w-[95%] md:max-w-[90%] lg:max-w-7xl mx-auto text-center bg-black/40 backdrop-blur-sm p-6 sm:p-8 lg:px-12 lg:py-10 border-y-2 border-white/10 shadow-2xl relative overflow-hidden">
           {/* Decorative elements */}
           <div className="absolute -left-20 -top-20 w-40 h-40 rounded-full bg-blue-500/20 blur-3xl"></div>
           <div className="absolute -right-20 -bottom-20 w-40 h-40 rounded-full bg-purple-500/20 blur-3xl"></div>
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold lg:text-5xl xl:text-6xl text-white leading-tight mb-6">
-            <span className="inline-block">Corridors of Peace</span>{' '}
+            <span className="inline-block">Corridors of Peace</span>{" "}
             <span className="inline-block">Humanitarian Foundation</span>
           </h1>
 
@@ -38,15 +38,21 @@ const Hero = () => {
               <div className="h-px flex-1 bg-gradient-to-r from-transparent via-white/50 to-transparent"></div>
               <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-blue-100 italic font-serif tracking-wide px-4">
                 <span className="relative">
-                  <span className="absolute -left-4 -top-3 text-2xl text-blue-300/50 font-serif">"</span>
+                  <span className="absolute -left-4 -top-3 text-lg text-blue-300/50 font-serif">
+                    "
+                  </span>
                   Thinking Global, Acting Local
-                  <span className="absolute -right-4 -bottom-3 text-2xl text-blue-300/50 font-serif">"</span>
+                  <span className="absolute -right-4 -bottom-3 text-2xl text-blue-300/50 font-serif">
+                    "
+                  </span>
                 </span>
               </h2>
               <div className="h-px flex-1 bg-gradient-to-r from-transparent via-white/50 to-transparent"></div>
             </div>
           </div>
-          <p className="text-sm text-blue-200/70 font-light tracking-widest mb-2">OUR GUIDING PRINCIPLE</p>
+          <p className="text-sm text-blue-200/70 font-light tracking-widest mb-2">
+            OUR GUIDING PRINCIPLE
+          </p>
 
           <p className="text-lg text-blue-50 mb-10 max-w-3xl mx-auto leading-relaxed">
             Creating sustainable change through education, economic empowerment,
