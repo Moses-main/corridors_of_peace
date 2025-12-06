@@ -226,41 +226,59 @@ const Universal_Causes = () => {
     <section className="py-16 bg-gray-50" id="impact_pillars">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
-            Universal Causes We Champion
+          <h2 className="text-base font-semibold text-blue-600 tracking-wide uppercase">
+            Our Impact Pillars
           </h2>
-          <div className="mt-4 h-1 w-20 bg-blue-600 mx-auto"></div>
-          <p className="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">
-            As a Pan-African organization anchored in Africa (Nig), COPIN
-            operates on pillars that are women/girls/vulnerable-led in both
-            design and benefit. We champion African-led solutions across the
-            following thematic areas, ensuring inclusivity and dedicated support
-            for the healing and engagement of men and boys.
+          <p className="mt-2 text-3xl font-extrabold text-gray-900 sm:text-4xl">
+            Universal Causes We Champion
+          </p>
+          <p className="mt-4 max-w-2xl text-xl text-gray-500 mx-auto">
+            We are committed to creating lasting change across multiple dimensions
+            of African society
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
-          {impact_pillars.map((project) => (
-            <div
-              key={project.id}
-              className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300"
-            >
-              <div className="p-6">
-                <div className="mb-4">
-                  <div className="flex items-center justify-center w-16 h-16 bg-blue-50 rounded-full mx-auto mb-4">
-                    {project.icon}
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          {impact_pillars.map((pillar) => {
+            // Split initiatives by * and trim whitespace
+            const initiativesList = pillar.initiatives
+              .split("*")
+              .map((item) => item.trim())
+              .filter((item) => item); // Remove any empty strings
+
+            return (
+              <div
+                key={pillar.id}
+                className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 h-full flex flex-col"
+              >
+                <div className="p-6 flex-1 flex flex-col">
+                  <div className="flex items-center mb-4">
+                    <div className="p-2 bg-blue-50 rounded-lg">
+                      {pillar.icon}
+                    </div>
+                    <h3 className="ml-4 text-xl font-bold text-gray-900">
+                      {pillar.pillar}
+                    </h3>
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">
-                    {project.pillar}
-                  </h3>
-                  <p className="text-gray-600 mb-4">{project.initiatives}</p>
-                  <div className="text-sm font-medium text-blue-600">
-                    {project.stats}
+
+                  <div className="mb-4 flex-1">
+                    <ul className="space-y-2">
+                      {initiativesList.map((initiative, index) => (
+                        <li key={index} className="flex items-start">
+                          <span className="text-blue-600 mr-2">-</span>
+                          <span className="text-gray-600">{initiative}</span>
+                        </li>
+                      ))}
+                    </ul>
                   </div>
+
+                  <p className="text-sm font-medium text-blue-600 mt-auto">
+                    {pillar.stats}
+                  </p>
                 </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>

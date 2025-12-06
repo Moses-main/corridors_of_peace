@@ -294,7 +294,7 @@ const ContactPage = () => {
                       className="text-gray-700 hover:text-blue-600"
                     >
                       +234-803-946-6260
-                    </a>
+                </a>
                   </div>
 
                   <div className="flex items-start">
