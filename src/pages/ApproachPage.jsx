@@ -7,21 +7,78 @@ const ApproachPage = () => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
-      className="pt-20 md:pt-24 pb-12 md:pb-16 bg-white min-h-screen"
+      className="pt-20 md:pt-24 pb-16 md:pb-20 bg-white min-h-screen"
     >
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 2xl:max-w-7xl">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 2xl:max-w-6xl">
         {/* Header */}
-        <div className="text-center mb-10 md:mb-12 px-2">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-3 sm:mb-4">
+        <div className="text-center mb-12 md:mb-16 px-2">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 sm:mb-5 leading-tight">
             Our Approach
           </h1>
-          <div className="w-20 sm:w-24 h-1 bg-blue-600 mx-auto mb-4 sm:mb-6"></div>
-          <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto mb-10">
+          <div className="w-20 sm:w-24 h-1 bg-blue-600 mx-auto mb-6 sm:mb-8"></div>
+          <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto mb-8 leading-relaxed">
             Integrated Development for Lasting Peace in Africa
           </p>
 
+          {/* New Approach Content */}
+          <div className="max-w-4xl mx-auto mb-16">
+            <p className="text-lg text-gray-700 mb-10 leading-relaxed text-justify max-w-3xl mx-auto">
+              We implement a holistic, three-pillar approach to women's empowerment, addressing the root causes of inequality and conflict by strategically linking peace, prosperity, and protection:
+            </p>
+            
+            <div className="space-y-8">
+              <div className="bg-white p-8 rounded-lg border border-gray-100 shadow-sm hover:shadow-md transition-all duration-200">
+                <div className="flex items-start">
+                  <div className="flex-shrink-0 h-6 w-6 text-blue-600 mt-0.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                  </div>
+                  <div className="ml-4">
+                    <h3 className="text-xl font-semibold text-gray-800 mb-3 leading-snug">Building Corridors of Peace</h3>
+                    <p className="text-gray-700 leading-relaxed text-justify text-base md:text-[16px] tracking-wide">
+                      We empower women as mediators, community leaders, and agents of social cohesion. Through inclusive dialogue, trauma healing, and conflict resolution training, we enable them to create and sustain vital corridors of peace within and between communities, forming the bedrock for safe and stable societies.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="bg-white p-6 rounded-lg border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-200">
+                <div className="flex items-start">
+                  <div className="flex-shrink-0 h-6 w-6 text-blue-600 mt-0.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                  </div>
+                  <div className="ml-4">
+                    <h3 className="text-xl font-semibold text-gray-800 mb-3 leading-snug">Creating Economic Opportunities</h3>
+                    <p className="text-gray-700 leading-relaxed text-justify text-base md:text-[16px] tracking-wide">
+                      We unlock economic agency by providing access to skills training, seed capital, market linkages, and entrepreneurship support. By fostering women-led enterprises and inclusive value chains, we transform economic opportunities into engines for poverty reduction, family stability, and community development.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="bg-white p-6 rounded-lg border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-200">
+                <div className="flex items-start">
+                  <div className="flex-shrink-0 h-6 w-6 text-blue-600 mt-0.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                  </div>
+                  <div className="ml-4">
+                    <h3 className="text-xl font-semibold text-gray-800 mb-3 leading-snug">Fortifying with Social Protection</h3>
+                    <p className="text-gray-700 leading-relaxed text-justify text-base md:text-[16px] tracking-wide">
+                      We advocate for and provide access to essential social protection programs, including health services, legal aid, safety nets, and violence prevention systems. This safety layer ensures that women and girls have the security and support necessary to recover from crisis, participate fully in the economy, and lead in their communities without fear.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
           {/* Three Pillars */}
-          <div className="max-w-4xl mx-auto bg-blue-50/30 p-5 sm:p-6 md:p-8 rounded-xl border border-blue-100 mb-10 md:mb-12">
+          <div className="max-w-4xl mx-auto bg-blue-50/30 p-6 sm:p-8 md:p-10 rounded-xl border border-blue-100 mb-16 md:mb-20 mt-16">
             <p className="text-base sm:text-lg text-gray-700 mb-6 sm:mb-8 leading-relaxed text-justify">
               We champion a holistic model for Africa's renewal, built on the
               belief that sustainable progress requires the full participation
