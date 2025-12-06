@@ -293,7 +293,7 @@ const ContactPage = () => {
                       href="tel:+235123456789"
                       className="text-gray-700 hover:text-blue-600"
                     >
-                      +41763193509
+                      +234-803-946-6260
                     </a>
                   </div>
 
