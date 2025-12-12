@@ -28,10 +28,29 @@ const Hero = () => {
           {/* Decorative elements */}
           <div className="absolute -left-20 -top-20 w-40 h-40 rounded-full bg-blue-500/20 blur-3xl"></div>
           <div className="absolute -right-20 -bottom-20 w-40 h-40 rounded-full bg-purple-500/20 blur-3xl"></div>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold lg:text-5xl xl:text-6xl text-white leading-tight mb-6">
-            <span className="inline-block">Corridors of Peace</span>{" "}
-            <span className="inline-block">Humanitarian Foundation</span>
-          </h1>
+          <div className="mb-8 text-center">
+            <div className="flex flex-col items-center justify-center">
+              {/* Logo Container */}
+              <div className="mb-6 p-2 bg-white/10 rounded-full border border-white/20 shadow-2xl transform hover:scale-105 transition-transform duration-500 ease-in-out">
+                <img 
+                  src="/images/logo/cop_logo.jpg" 
+                  alt="Corridors of Peace Logo" 
+                  className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 xl:w-64 xl:h-64 rounded-full object-cover border-4 border-white/30 shadow-xl"
+                />
+              </div>
+              
+              {/* Text Container */}
+              <div className="space-y-2">
+                <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight tracking-tight">
+                  Corridors of Peace
+                </h1>
+                <div className="h-1 w-24 bg-gradient-to-r from-blue-400 to-purple-500 mx-auto my-4 rounded-full"></div>
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-medium text-blue-100 tracking-wider">
+                  Humanitarian Foundation
+                </h2>
+              </div>
+            </div>
+          </div>
 
           <div className="relative w-full mb-8">
             <div className="flex items-center justify-center gap-4">
